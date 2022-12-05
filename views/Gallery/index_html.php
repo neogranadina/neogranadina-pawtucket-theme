@@ -1,6 +1,68 @@
+<?php
+	$config = caGetGalleryConfig();
+	switch($config->get("landing_page_format")){
+		case "grid":
+
+	$t_set = new ca_sets();
+	$va_access_values = caGetUserAccessValues($this->request);
+ 	$va_sets = $this->getVar("sets");
+	if(is_array($va_sets) && sizeof($va_sets)){
+		$va_first_items_from_set = $t_set->getPrimaryItemsFromSets(array_keys($va_sets), array("version" => "iconlarge", "checkAccess" => $va_access_values));
+	}
+?>
+
+<div class="row"><div class="col-sm-12 col-md-8 col-md-offset-2">
+	<H1><?php print $this->getVar("section_name"); ?></H1>
+<?php
+	if($vs_intro_global_value = $config->get("gallery_intro_text_global_value")){
+		if($vs_tmp = $this->getVar($vs_intro_global_value)){
+			print "<div class='setDescription'>".$vs_tmp."</div>";
+		}
+	}
+	if(is_array($va_sets) && sizeof($va_sets)){
+		# --- main area with info about selected set loaded via Ajax				
+			$i = 0;
+			foreach($va_sets as $vn_set_id => $va_set){
+				$i++;
+				if($i == 1){
+					print "<div class='row'>";
+				}
+				print "<div class='col-sm-3'>";
+				$va_first_item = array_shift($va_first_items_from_set[$vn_set_id]);
+				print "<div class='galleryList'>".caNavLink($this->request, $va_first_item["representation_tag"], '', '', 'Gallery', $vn_set_id).
+							"<label>".caNavLink($this->request, $va_set["name"], '', '', 'Gallery', $vn_set_id)."</label>
+							<div><small class='uppercase'>".$va_set["item_count"]." ".(($va_set["item_count"] == 1) ? _t("item") : _t("items"))."</small></div>
+						</div>\n";
+				print "</div><!-- end col -->";
+				if($i == 4){
+					print "</div><!-- end row -->";
+					$i = 0;
+				}
+			}
+			if($i){
+				print "</div><!-- end row -->";
+			}
+	}
+?>
+</div><!-- end col --></div><!-- end row -->
+		
+<?php
+		break;
+		# -------------------------
+		default:
+		
+?>
+
+
 <div class="row"><div class="col-sm-12">
 	<H1><?php print $this->getVar("section_name"); ?></H1>
 <?php
+	if($vs_intro_global_value = $config->get("gallery_intro_text_global_value")){
+		if($vs_tmp = $this->getVar($vs_intro_global_value)){
+			print "<div class='setDescription'>".$vs_tmp."</div>";
+		}
+	}
+
 	$va_sets = $this->getVar("sets");
 	$va_first_items_from_set = $this->getVar("first_items_from_sets");
 	if(is_array($va_sets) && sizeof($va_sets)){
@@ -30,12 +92,14 @@
 									print "<li>";
 								}
 								$va_first_item = array_shift($va_first_items_from_set[$vn_set_id]);
+
 								print "<div class='galleryItem'>
-											<a href='#' onclick='jQuery(\"#gallerySetInfo\").load(\"".caNavUrl($this->request, '', 'Gallery', 'getSetInfo', array('set_id' => $vn_set_id))."\"); return false;'>
+											<a href='#' class='galleryItemSetInfoLink' onclick='jQuery(\"#gallerySetInfo\").load(\"".caNavUrl($this->request, '', 'Gallery', 'getSetInfo', array('set_id' => $vn_set_id))."\"); return false;'>
 												<div class='galleryItemImg'>".$va_first_item["representation_tag"]."</div>
-												<h5>".$va_set["name"]."</h5>
+												<h3>".$va_set["name"]."</h3>
 												<p><small class='uppercase'>".$va_set["item_count"]." ".(($va_set["item_count"] == 1) ? _t("item") : _t("items"))."</small></p>
 											</a>
+												".caNavLink($this->request, "<span class='glyphicon glyphicon-th-large' aria-label='View gallery'></span> "._t("view %1", $this->getVar("section_item_name")), "btn btn-default", "", "Gallery", $vn_set_id)."
 											<div style='clear:both;'><!-- empty --></div>
 										</div>\n";
 								$i++;
@@ -53,8 +117,8 @@
 						if(sizeof($va_sets) > 4){
 ?>
 							<!-- Prev/next controls -->
-							<a href="#" class="galleryPrevious"><i class="fa fa-angle-left"></i></a>
-							<a href="#" class="galleryNext"><i class="fa fa-angle-right"></i></a>
+							<a href="#" class="galleryPrevious"><i class="fa fa-angle-left" aria-label="previous"></i></a>
+							<a href="#" class="galleryNext"><i class="fa fa-angle-right" aria-label="next"></i></a>
 <?php
 						}
 ?>
@@ -123,3 +187,7 @@
 	}
 ?>
 </div><!-- end col --></div><!-- end row -->
+<?php
+		break;
+	}
+?>

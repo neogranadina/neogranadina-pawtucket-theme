@@ -7,7 +7,7 @@
  * ----------------------------------------------------------------------
  *
  * Software by Whirl-i-Gig (http://www.whirl-i-gig.com)
- * Copyright 2015-2021 Whirl-i-Gig
+ * Copyright 2015-2018 Whirl-i-Gig
  *
  * For more information visit http://www.CollectiveAccess.org
  *
@@ -27,22 +27,26 @@
  */
 ?>
 		<div style="clear:both; height:1px;"><!-- empty --></div>
-		</div><!-- end pageArea --></div><!-- end col --></div><!-- end row --></div><!-- end container -->
-		<footer id="footer">
-			<ul class="list-inline pull-right social">
-				<li><i class="fa fa-twitter"></i></li>
-				<li><i class="fa fa-facebook-square"></i></li>
-				<li><i class="fa fa-youtube-play"></i></li>
-			</ul>
-			<div>
-				Footer text here
+		</div><!-- end pageArea --></div><!-- end main --></div><!-- end col --></div><!-- end row --></div><!-- end container -->
+		<footer id="footer" class="text-center">
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<p>
+						<a href="#" class="orgLink">Link to Main Site</a>
+						<div class="address">Address</div>
+					</p>
+					<ul class="list-inline social">
+						<li><a href="#" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+						<li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="#" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
+					</ul>
+					<ul class="list-inline">
+						<li><?php print caNavLink($this->request, _t("Contact"), "", "", "Contact", "Form"); ?></li>
+						<li><?php print caNavLink($this->request, _t("Site Page"), "", "", "", ""); ?></li>
+						<li><?php print caNavLink($this->request, _t("Site Page"), "", "", "", ""); ?></li>
+					</ul>
+				</div>
 			</div>
-			<ul class="list-inline">
-				<li><a href="#">Link 1</a></li>
-				<li><a href="#">Link 2</a></li>
-				<li><a href="#">Link 3</a></li>
-			</ul>
-			<div><small>&copy; <a href="https://www.collectiveaccess.org">CollectiveAccess 2022</a></small></div>
 		</footer><!-- end footer -->
 <?php
 	//
@@ -54,7 +58,7 @@
 ?>
 	
 		<?php print TooltipManager::getLoadHTML(); ?>
-		<div id="caMediaPanel"> 
+		<div id="caMediaPanel" role="complementary"> 
 			<div id="caMediaPanelContentArea">
 			
 			</div>
@@ -70,8 +74,13 @@
 					caMediaPanel = caUI.initPanel({ 
 						panelID: 'caMediaPanel',										/* DOM ID of the <div> enclosing the panel */
 						panelContentID: 'caMediaPanelContentArea',		/* DOM ID of the content area <div> in the panel */
-						exposeBackgroundColor: '#FFFFFF',						/* color (in hex notation) of background masking out page content; include the leading '#' in the color spec */
-						exposeBackgroundOpacity: 0.7,							/* opacity of background color masking out page content; 1.0 is opaque */
+						onCloseCallback: function(data) {
+							if(data && data.url) {
+								window.location = data.url;
+							}
+						},
+						exposeBackgroundColor: '#000000',						/* color (in hex notation) of background masking out page content; include the leading '#' in the color spec */
+						exposeBackgroundOpacity: 0.5,							/* opacity of background color masking out page content; 1.0 is opaque */
 						panelTransitionSpeed: 400, 									/* time it takes the panel to fade in/out in milliseconds */
 						allowMobileSafariZooming: true,
 						mobileSafariViewportTagID: '_msafari_viewport',
@@ -80,6 +89,15 @@
 				}
 			});
 			/*(function(e,d,b){var a=0;var f=null;var c={x:0,y:0};e("[data-toggle]").closest("li").on("mouseenter",function(g){if(f){f.removeClass("open")}d.clearTimeout(a);f=e(this);a=d.setTimeout(function(){f.addClass("open")},b)}).on("mousemove",function(g){if(Math.abs(c.x-g.ScreenX)>4||Math.abs(c.y-g.ScreenY)>4){c.x=g.ScreenX;c.y=g.ScreenY;return}if(f.hasClass("open")){return}d.clearTimeout(a);a=d.setTimeout(function(){f.addClass("open")},b)}).on("mouseleave",function(g){d.clearTimeout(a);f=e(this);a=d.setTimeout(function(){f.removeClass("open")},b)})})(jQuery,window,200);*/
+		
+//			$(document).ready(function() {
+//				$(document).bind("contextmenu",function(e){
+//				   return false;
+//				 });
+//			}); 
 		</script>
+<?php
+	print $this->render("Cookies/banner_html.php");	
+?>
 	</body>
 </html>

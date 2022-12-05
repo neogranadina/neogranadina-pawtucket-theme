@@ -7,7 +7,7 @@
  * ----------------------------------------------------------------------
  *
  * Software by Whirl-i-Gig (http://www.whirl-i-gig.com)
- * Copyright 2014-2022 Whirl-i-Gig
+ * Copyright 2014-2017 Whirl-i-Gig
  *
  * For more information visit http://www.CollectiveAccess.org
  *
@@ -42,18 +42,37 @@
 			$va_user_links[] = "<li>".caNavLink($this->request, $vs_classroom_sectionHeading, '', '', 'Classroom', 'Index', array())."</li>";
 		}
 		$va_user_links[] = "<li>".caNavLink($this->request, _t('User Profile'), '', '', 'LoginReg', 'profileForm', array())."</li>";
+		
+		if ($this->request->config->get('use_submission_interface')) {
+			$va_user_links[] = "<li>".caNavLink($this->request, _t('Submit content'), '', '', 'Contribute', 'List', array())."</li>";
+		}
 		$va_user_links[] = "<li>".caNavLink($this->request, _t('Logout'), '', '', 'LoginReg', 'Logout', array())."</li>";
 	} else {	
 		if (!$this->request->config->get(['dontAllowRegistrationAndLogin', 'dont_allow_registration_and_login']) || $this->request->config->get('pawtucket_requires_login')) { $va_user_links[] = "<li><a href='#' onclick='caMediaPanel.showPanel(\"".caNavUrl($this->request, '', 'LoginReg', 'LoginForm', array())."\"); return false;' >"._t("Login")."</a></li>"; }
 		if (!$this->request->config->get(['dontAllowRegistrationAndLogin', 'dont_allow_registration_and_login']) && !$this->request->config->get('dontAllowRegistration')) { $va_user_links[] = "<li><a href='#' onclick='caMediaPanel.showPanel(\"".caNavUrl($this->request, '', 'LoginReg', 'RegisterForm', array())."\"); return false;' >"._t("Register")."</a></li>"; }
 	}
 	$vb_has_user_links = (sizeof($va_user_links) > 0);
+	$va_access_values = caGetUserAccessValues($this->request);
 
 ?><!DOCTYPE html>
-<html lang="en">
+<html lang="en" <?php print ((strtoLower($this->request->getController()) == "front")) ? "class='frontContainer'" : ""; ?>>
 	<head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
+	
+	<meta property="og:url" content="<?php print $this->request->config->get("site_host").caNavUrl($this->request, "*", "*", "*"); ?>" />
+	<meta property="og:type" content="website" />
+<?php
+	if(!in_array(strToLower($this->request->getAction), array("objects"))){
+		# --- this is set on detail page
+?>
+	<meta property="og:description" content="<?php print htmlspecialchars((MetaTagManager::getWindowTitle()) ? MetaTagManager::getWindowTitle() : $this->request->config->get("app_display_name")); ?>" />
+	<meta property="og:title" content="<?php print $this->request->config->get("app_display_name"); ?>" />
+<?php
+	}
+?>	
+
+	
 	<?php print MetaTagManager::getHTML(); ?>
 	<?php print AssetLoadManager::getLoadHTML($this->request); ?>
 
@@ -74,8 +93,12 @@
 		print $o_debugbar_renderer->renderHead();
 	}
 ?>
-</head>
-<body>
+
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Mulish:ital@0;1&display=swap" rel="stylesheet">
+</head> 
+
+<body class='<?php print (strtoLower($this->request->getController()) == "front") ? "frontContainer" : ""; ?>'>
+	<div id="skipNavigation"><a href="#main">Skip to main content</a></div>
 	<nav class="navbar navbar-default yamm" role="navigation">
 		<div class="container menuBar">
 			<!-- Brand and toggle get grouped for better mobile display -->
@@ -96,9 +119,14 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-<?php
-				print caNavLink($this->request, caGetThemeGraphic($this->request, 'logo.svg'), "navbar-brand logo", "", "","");
-?>
+			<div class="pretty-container-nav">
+						<div class="pretty-site-logo-nav">
+							<a href="http://abc.neogranadina.org"><img src="http://abc.neogranadina.org/themes/neogranadina/assets/pawtucket/graphics/neogranadina-plain.png" class="pretty-site-logo-nav-img"></a>
+						</div>
+						<div class="pretty-text-nav">
+							<div class="pretty-title"><a href="http://abc.neogranadina.org" style="color: black; text-decoration: none;">Archivo Biblioteca Catálogo</a></div>
+						</div>
+					</div>
 			</div>
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
@@ -107,7 +135,7 @@
 	if ($vb_has_user_links) {
 ?>
 			<div class="collapse navbar-collapse" id="user-navbar-toggle">
-				<ul class="nav navbar-nav">
+				<ul class="nav navbar-nav" role="list" aria-label="<?php print _t("Mobile User Navigation"); ?>">
 					<?php print join("\n", $va_user_links); ?>
 				</ul>
 			</div>
@@ -118,22 +146,23 @@
 <?php
 	if ($vb_has_user_links) {
 ?>
-				<ul class="nav navbar-nav navbar-right" id="user-navbar">
+				<ul class="nav navbar-nav navbar-right" id="user-navbar" role="list" aria-label="<?php print _t("User Navigation"); ?>">
 					<li class="dropdown" style="position:relative;">
-						<a href="#" class="dropdown-toggle icon" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span></a>
-						<ul class="dropdown-menu"><?php print join("\n", $va_user_links); ?></ul>
+						<a href="#" class="dropdown-toggle icon" data-toggle="dropdown"><span class="glyphicon glyphicon-user" aria-label="<?php print _t("User options"); ?>"></span></a>
+						<ul class="dropdown-menu" role="list"><?php print join("\n", $va_user_links); ?></ul>
 					</li>
 				</ul>
 <?php
 	}
 ?>
-				<form class="navbar-form navbar-right" role="search" action="<?php print caNavUrl($this->request, '', 'MultiSearch', 'Index'); ?>">
+				<form class="navbar-form navbar-right" role="search" action="<?php print caNavUrl($this->request, '', 'MultiSearch', 'Index'); ?>" aria-label="<?php print _t("Búsqueda"); ?>">
 					<div class="formOutline">
 						<div class="form-group">
-							<input type="text" class="form-control" id="headerSearchInput" placeholder="Search" name="search" autocomplete="off" />
+							<input type="text" class="form-control" id="headerSearchInput" placeholder="<?php print _t("Búsqueda sencilla"); ?>" name="search" autocomplete="off" aria-label="<?php print _t("Search text"); ?>" />
 						</div>
-						<button type="submit" class="btn-search" id="headerSearchButton"><span class="glyphicon glyphicon-search"></span></button>
+						<button type="submit" class="btn-search" id="headerSearchButton"><span class="glyphicon glyphicon-search" aria-label="<?php print _t("Submit"); ?>"></span></button>
 					</div>
+					<div class="headerAdvancedSearch"><?php print caNavLink($this->request, _t("Búsqueda avanzada"), "", "", "Search", "advanced/objects"); ?></div>
 				</form>
 				<script type="text/javascript">
 					$(document).ready(function(){
@@ -143,16 +172,14 @@
 						})
 					});
 				</script>
-				<ul class="nav navbar-nav navbar-right menuItems">
-					<li <?php print ($this->request->getController() == "About") ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("About"), "", "", "About", "Index"); ?></li>
+				<ul class="nav navbar-nav navbar-right menuItems" role="list" aria-label="<?php print _t("Primary Navigation"); ?>">
+					<li <?php print ($this->request->getController() == "About") ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("Acerca de"), "", "", "About", "Index"); ?></li>
 					<?php print $this->render("pageFormat/browseMenu.php"); ?>	
-					<li <?php print (($this->request->getController() == "Search") && ($this->request->getAction() == "advanced")) ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("Advanced Search"), "", "", "Search", "advanced/objects"); ?></li>
-					<li <?php print ($this->request->getController() == "Gallery") ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("Gallery"), "", "", "Gallery", "Index"); ?></li>
-					<li <?php print ($this->request->getController() == "Collections") ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("Collections"), "", "", "Collections", "index"); ?></li>					
-					<li <?php print ($this->request->getController() == "Contact") ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("Contact"), "", "", "Contact", "Form"); ?></li>
+					<li <?php print ($this->request->getController() == "Collections") ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("Instituciones"), "", "", "Collections", "index"); ?></li>					
+					<!-- <li <?php print ($this->request->getController() == "Gallery") ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("Galerías"), "", "", "Gallery", "Index"); ?></li> -->
 				</ul>
 			</div><!-- /.navbar-collapse -->
 		</div><!-- end container -->
 	</nav>
 	<div class="container"><div class="row"><div class="col-xs-12">
-		<div id="pageArea" <?php print caGetPageCSSClasses(); ?>>
+		<div role="main" id="main"><div id="pageArea" <?php print caGetPageCSSClasses(); ?>>

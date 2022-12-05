@@ -23,7 +23,7 @@
 	}
 	if($vb_has_children){
 ?>					
-			<div class='text-right'><a href='#' onclick='$("#collectionsWrapper").toggle(300);return false;' class='showHide'>Show/Hide Collection Browser</a></div>
+			<div class='text-right'><a href='#' onclick='$("#collectionsWrapper").toggle(300);return false;' class='showHide'>Mostrar/esconder el navegador de colecciones</a></div>
 				<div class="row" id="collectionsWrapper" <?php print ($o_collections_config->get("browser_closed")) ? "style='display:none;'" : ""; ?>>			
 					<div class='col-sm-12'>
 					
@@ -35,7 +35,7 @@
 						</div>
 						<div class='unit row'>
 							<div class='col-xs-12<?php print ($vb_has_grandchildren) ? "col-sm-4 col-md-4 col-lg-4" : ""; ?>'>
-								<div class='collectionsContainer'><div class='label'><?php print ucFirst($t_item->get("ca_collections.type_id", array('convertCodesToDisplayText' => true))); ?> Contents</div>
+								<div class='collectionsContainer'><div class='label'>Contenido de la <?php print ucFirst($t_item->get("ca_collections.type_id", array('convertCodesToDisplayText' => true))); ?></div>
 <?php
 					if($qr_collection_children->numHits()){
 						while($qr_collection_children->nextHit()) {
@@ -100,7 +100,7 @@
 					if($vb_has_grandchildren){
 ?>
 							<div id='collectionLoad' class='col-xs-12 col-sm-8 col-md-8 col-lg-8'>
-								<i class='fa fa-arrow-left'></i> Click a <?php print ucFirst($t_item->get("ca_collections.type_id", array('convertCodesToDisplayText' => true))); ?> container to the left to see its contents.
+								<i class='fa fa-arrow-left'></i> Selecciona una <?php print ucFirst($t_item->get("ca_collections.type_id", array('convertCodesToDisplayText' => true))); ?> en la izquierda para ver su contenido.
 							</div>
 <?php
 					}

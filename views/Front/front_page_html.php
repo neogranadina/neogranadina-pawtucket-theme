@@ -29,15 +29,120 @@
  *
  * ----------------------------------------------------------------------
  */
-		print $this->render("Front/featured_set_slideshow_html.php");
+  $va_access_values = $this->getVar("access_values");
+ $vs_hero = $this->request->getParameter("hero", pString);
+ if(!$vs_hero){
+ 	$vs_hero = rand(1, 3);
+ }
 ?>
-	<div class="row">
-		<div class="col-sm-8">
-			<H1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate, orci quis vehicula eleifend, metus elit laoreet elit.</H1>
-		</div><!--end col-sm-8-->
-		<div class="col-sm-4">
+
+<div class="parallax hero<?php print $vs_hero; ?>">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+				
+				<div class="heroSearch">
+					<h1>
+						<div class="line1">Bienvenidos al</div>
+					</h1>
+					<div class="pretty-container">
+						<div class="pretty-site-logo">
+							<img src="http://prueba.archivocolectivo.org/themes/neogranadina/assets/pawtucket/graphics/neogranadina-plain.png">
+						</div>
+						<div class="pretty-text">
+							<div class="line2">Archivo<br>Biblioteca<br>Catálogo</div>
+						</div>
+					</div>
+					<h1>
+						<div class="line3">de <a href="https://neogranadina.org" style="font-family: 'IM Fell DW Pica'; color: white; font-size: 120%; text-decoration: none;">Neogranadina</a></div>
+						<div class="line4">{{{hp_search_text}}}</div>
+					</h1>
+					<form role="search" action="<?php print caNavUrl($this->request, '', 'MultiSearch', 'Index'); ?>">
+						<div class="formOutline">
+							<div class="form-group">
+								<input type="text" class="form-control" id="heroSearchInput" placeholder="<?php print _t("Buscar"); ?>" name="search" autocomplete="off" aria-label="<?php print _t("Buscar"); ?>" />
+							</div>
+							<button type="submit" class="btn-search" id="heroSearchButton"><span class="glyphicon glyphicon-search" aria-label="<?php print _t("Submit Search"); ?>"></span></button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 <?php
-		print $this->render("Front/gallery_set_links_html.php");
+	$vs_hp_intro_title = $this->getVar("hp_intro_title");
+	$vs_hp_intro = $this->getVar("hp_intro");
+	if($vs_hp_intro_title || $vs_hp_intro){
 ?>
-		</div> <!--end col-sm-4-->	
-	</div><!-- end row -->
+	<div class="container hpIntro">
+		<div class="row">
+			<div class="col-md-12 col-lg-8 col-lg-offset-2">
+				<div class="callout">
+	<?php
+				if($vs_hp_intro_title){
+					print "<div class='calloutTitle'>".$vs_hp_intro_title."</div>";
+				}
+				if($vs_hp_intro){
+					print "<p>".$vs_hp_intro."</p>";
+				}
+	?>
+				</div>
+			</div>
+		</div>
+	</div>
+<?php
+	}
+?>
+	<div class="row hpExplore bgLightGray">
+		<div class="col-md-12 col-lg-8 col-lg-offset-2">
+		<H2 class="frontSubHeading text-center">Explora nuestras colecciones</H2>
+
+			<div class="row">
+				<div class="col-md-4">
+					<div class="hpExploreBox">
+						<?php print caNavLink($this->request, "<div class='hpExploreBoxImage hpExploreBoxImage1'></div>", "", "", "", ""); ?>
+						<div class="hpExploreBoxDetails">
+							<div class="hpExploreBoxTitle"><?php print caNavLink($this->request, "xxx", "", "", "", ""); ?></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="hpExploreBox">
+						<?php print caNavLink($this->request, "<div class='hpExploreBoxImage hpExploreBoxImage1'></div>", "", "", "", ""); ?>
+						<div class="hpExploreBoxDetails">
+							<div class="hpExploreBoxTitle"><?php print caNavLink($this->request, "xxx", "", "", "", ""); ?></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="hpExploreBox">
+						<?php print caNavLink($this->request, "<div class='hpExploreBoxImage hpExploreBoxImage1'></div>", "", "", "", ""); ?>
+						<div class="hpExploreBoxDetails">
+							<div class="hpExploreBoxTitle"><?php print caNavLink($this->request, "xxx", "", "", "", ""); ?></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<?php
+	# --- display slideshow of random images
+	#print $this->render("Front/featured_set_slideshow_html.php");
+
+	# --- display galleries as a grid?
+	print $this->render("Front/gallery_grid_html.php");
+	# --- display galleries as a slideshow?
+	#print $this->render("Front/gallery_slideshow_html.php");
+?>
+
+<div id="hpScrollBar"><div class="row"><div class="col-sm-12"><i class="fa fa-chevron-down" aria-hidden="true" title="Scroll down for more"></i></div></div></div>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$(window).scroll(function(){
+					$("#hpScrollBar").fadeOut();
+				});
+			});
+		</script>

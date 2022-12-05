@@ -37,10 +37,11 @@
 		$vs_caption_template = "<l>^ca_objects.preferred_labels.name</l>";
 	}
 	if($qr_res && $qr_res->numHits()){
-?>   
+?>
+<div class="row"><div class="col-sm-12"><H2 class="highlights">Highlights</H2>  
 		<div class="jcarousel-wrapper">
 			<!-- Carousel -->
-			<div class="jcarousel">
+			<div class="jcarousel featured">
 				<ul>
 <?php
 					while($qr_res->nextHit()){
@@ -61,32 +62,37 @@
 			if($vb_item_output){
 ?>
 			<!-- Prev/next controls -->
-			<a href="#" class="jcarousel-control-prev"><i class="fa fa-angle-left"></i></a>
-			<a href="#" class="jcarousel-control-next"><i class="fa fa-angle-right"></i></a>
+			<a href="#" class="jcarousel-control-prev featured"><i class="fa fa-angle-left"></i></a>
+			<a href="#" class="jcarousel-control-next featured"><i class="fa fa-angle-right"></i></a>
 		
 			<!-- Pagination -->
-			<p class="jcarousel-pagination">
+			<p class="jcarousel-pagination featured">
 			<!-- Pagination items will be generated in here -->
 			</p>
 <?php
 			}
 ?>
 		</div><!-- end jcarousel-wrapper -->
+</div></div>
 		<script type='text/javascript'>
 			jQuery(document).ready(function() {
 				/*
 				Carousel initialization
 				*/
-				$('.jcarousel')
+				$('.jcarousel.featured')
 					.jcarousel({
 						// Options go here
 						wrap:'circular'
 					});
+					$('.jcarousel.featured').jcarouselAutoscroll({
+					autostart: true,
+					interval: 2000
+				});
 		
 				/*
 				 Prev control initialization
 				 */
-				$('.jcarousel-control-prev')
+				$('.jcarousel-control-prev.featured')
 					.on('jcarouselcontrol:active', function() {
 						$(this).removeClass('inactive');
 					})
@@ -101,7 +107,7 @@
 				/*
 				 Next control initialization
 				 */
-				$('.jcarousel-control-next')
+				$('.jcarousel-control-next.featured')
 					.on('jcarouselcontrol:active', function() {
 						$(this).removeClass('inactive');
 					})
@@ -116,7 +122,7 @@
 				/*
 				 Pagination initialization
 				 */
-				$('.jcarousel-pagination')
+				$('.jcarousel-pagination.featured')
 					.on('jcarouselpagination:active', 'a', function() {
 						$(this).addClass('active');
 					})
