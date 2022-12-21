@@ -47,7 +47,7 @@
 					</h1>
 					<div class="pretty-container">
 						<div class="pretty-site-logo">
-							<img src="http://prueba.archivocolectivo.org/themes/neogranadina/assets/pawtucket/graphics/neogranadina-plain.png">
+							<img src="http://abc.neogranadina.org/themes/neogranadina/assets/pawtucket/graphics/neogranadina-plain.png">
 						</div>
 						<div class="pretty-text">
 							<div class="line2">Archivo<br>Biblioteca<br>Catálogo</div>

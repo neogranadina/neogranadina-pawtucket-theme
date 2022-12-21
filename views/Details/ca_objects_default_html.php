@@ -85,21 +85,67 @@
 				{{{<ifdef code="ca_objects.measurementSet.measurements">^ca_objects.measurementSet.measurements (^ca_objects.measurementSet.measurementsType)</ifdef><ifdef code="ca_objects.measurementSet.measurements,ca_objects.measurementSet.measurements"> x </ifdef><ifdef code="ca_objects.measurementSet.measurements2">^ca_objects.measurementSet.measurements2 (^ca_objects.measurementSet.measurementsType2)</ifdef>}}}
 				
 				
-				{{{<ifdef code="ca_objects.idno"><H6>Identifier:</H6>^ca_objects.idno<br/></ifdef>}}}
+				{{{<ifdef code="ca_objects.idno"><H6>Identificador:</H6>^ca_objects.idno<br/></ifdef>}}}
 				{{{<ifdef code="ca_objects.containerID"><H6>Box/series:</H6>^ca_objects.containerID<br/></ifdef>}}}				
 				
 				{{{<ifdef code="ca_objects.description">
-					<div class='unit'><h6>Description</h6>
+					<div class='unit'><h6>Descripción</h6>
 						<span class="trimText">^ca_objects.description</span>
 					</div>
 				</ifdef>}}}
 				
 				
-				{{{<ifdef code="ca_objects.dateSet.setDisplayValue"><H6>Date:</H6>^ca_objects.dateSet.setDisplayValue<br/></ifdef>}}}
+				{{{<ifdef code="ca_objects.unitdate"><H6>Fecha:</H6>^ca_objects.unitdate<br/></ifdef>}}}
 			
+				<hr></hr>
+				<!-- custom code -->
+				<div class="row">
+					<div class="col-sm-6">
+						{{{<ifdef code="ca_objects.narra_num_elemento"><H6>Número del documento</H6>^ca_objects.narra_num_elemento<br/></ifdef>}}}
+						{{{<ifdef code="ca_objects.narra_tomo_titulo"><H6>Título del tomo</H6>^ca_objects.narra_tomo_titulo<br/></ifdef>}}}
+						{{{
+							<ifdef code="ca_objects.narra_vol_titulo">
+								<H6>Título del volumen</H6>
+								<unit relativeTo="ca_objects.narra_vol_titulo" delimiter="<br/>">^ca_objects.narra_vol_titulo</unit>
+
+							</ifdef>
+						}}}
+						{{{
+							<ifdef code="ca_objects.narra_secc_titulo">
+								<H6>Título de la sección</H6>
+								<unit relativeTo="ca_objects.narra_secc_titulo" delimiter="<br/>">^ca_objects.narra_secc_titulo</unit>
+							</ifdef>
+						}}}
+						{{{
+							<ifdef code="ca_objects.narra_edic_vol">
+								<H6>Edición del volumen</H6>
+								<unit relativeTo="ca_objects.narra_edic_vol" delimiter="<br/>">^ca_objects.narra_edic_vol</unit>
+							</ifdef>
+						}}}
+						{{{
+							<ifdef code="ca_objects.narra_imprenta">
+								<H6>Imprenta</H6>
+								<unit relativeTo="ca_objects.narra_imprenta" delimiter="<br/>">^ca_objects.narra_imprenta</unit>
+							</ifdef>
+						}}}
+						{{{
+							<ifdef code="ca_objects.pages">
+								<H6>Páginas</H6>
+								<unit relativeTo="ca_objects.pages" delimiter="<br/>">^ca_objects.pages</unit>
+							</ifdef>
+						}}}
+						{{{
+							<ifdef code="ca_objects.narra_biblioref">
+								<H6>Referencia bibliográfica sugerida</H6>
+								<unit relativeTo="ca_objects.narra_biblioref" delimiter="<br/>">^ca_objects.narra_biblioref</unit>
+						}}}
+					</div>
+				</div>
+
 				<hr></hr>
 					<div class="row">
 						<div class="col-sm-6">		
+						
 							{{{<ifcount code="ca_entities" min="1" max="1"><H6>Related person</H6></ifcount>}}}
 							{{{<ifcount code="ca_entities" min="2"><H6>Related people</H6></ifcount>}}}
 							{{{<unit relativeTo="ca_entities" delimiter="<br/>"><l>^ca_entities.preferred_labels</l> (^relationship_typename)</unit>}}}
