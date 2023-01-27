@@ -25,17 +25,18 @@
  *
  * ----------------------------------------------------------------------
  */
- 
-	$t_object = 			$this->getVar("item");
-	$va_comments = 			$this->getVar("comments");
-	$va_tags = 				$this->getVar("tags_array");
-	$vn_comments_enabled = 	$this->getVar("commentsEnabled");
-	$vn_share_enabled = 	$this->getVar("shareEnabled");
-	$vn_pdf_enabled = 		$this->getVar("pdfEnabled");
-	$vn_id =				$t_object->get('ca_objects.object_id');
+
+$t_object = 			$this->getVar("item");
+$va_comments = 			$this->getVar("comments");
+$va_tags = 				$this->getVar("tags_array");
+$vn_comments_enabled = 	$this->getVar("commentsEnabled");
+$vn_share_enabled = 	$this->getVar("shareEnabled");
+$vn_pdf_enabled = 		$this->getVar("pdfEnabled");
+$vn_id =				$t_object->get('ca_objects.object_id');
 ?>
 <div class="row">
-	<div class='col-xs-12 navTop'><!--- only shown at small screen size -->
+	<div class='col-xs-12 navTop'>
+		<!--- only shown at small screen size -->
 		{{{previousLink}}}{{{resultsLink}}}{{{nextLink}}}
 	</div><!-- end detailTop -->
 	<div class='navLeftRight col-xs-1 col-sm-1 col-md-1 col-lg-1'>
@@ -44,128 +45,132 @@
 		</div><!-- end detailNavBgLeft -->
 	</div><!-- end col -->
 	<div class='col-xs-12 col-sm-10 col-md-10 col-lg-10'>
-		<div class="container"><div class="row">
-			<div class='col-sm-6 col-md-6 col-lg-5 col-lg-offset-1'>
-				{{{representationViewer}}}
-				
-				
-				<div id="detailAnnotations"></div>
-				
-				<?php print caObjectRepresentationThumbnails($this->request, $this->getVar("representation_id"), $t_object, array("returnAs" => "bsCols", "linkTo" => "carousel", "bsColClasses" => "smallpadding col-sm-3 col-md-3 col-xs-4", "primaryOnly" => $this->getVar('representationViewerPrimaryOnly') ? 1 : 0)); ?>
-				
-<?php
-				# Comment and Share Tools
-				if ($vn_comments_enabled | $vn_share_enabled | $vn_pdf_enabled) {
-						
-					print '<div id="detailTools">';
-					if ($vn_comments_enabled) {
-?>				
-						<div class="detailTool"><a href='#' onclick='jQuery("#detailComments").slideToggle(); return false;'><span class="glyphicon glyphicon-comment"></span>Comments and Tags (<?php print sizeof($va_comments) + sizeof($va_tags); ?>)</a></div><!-- end detailTool -->
-						<div id='detailComments'><?php print $this->getVar("itemComments");?></div><!-- end itemComments -->
-<?php				
-					}
-					if ($vn_share_enabled) {
-						print '<div class="detailTool"><span class="glyphicon glyphicon-share-alt"></span>'.$this->getVar("shareLink").'</div><!-- end detailTool -->';
-					}
-					if ($vn_pdf_enabled) {
-						print "<div class='detailTool'><span class='glyphicon glyphicon-file'></span>".caDetailLink($this->request, "Download as PDF", "faDownload", "ca_objects",  $vn_id, array('view' => 'pdf', 'export_format' => '_pdf_ca_objects_summary'))."</div>";
-					}
-					print '</div><!-- end detailTools -->';
-				}				
+		<div class="container">
+			<div class="row">
+				<div class='col-sm-6 col-md-6 col-lg-5 col-lg-offset-1'>
+					{{{representationViewer}}}
 
-?>
 
-			</div><!-- end col -->
-			
-			<div class='col-sm-6 col-md-6 col-lg-5'>
-				<H4>{{{<unit relativeTo="ca_collections" delimiter="<br/>"><l>^ca_collections.preferred_labels.name</l></unit><ifcount min="1" code="ca_collections"> ➔ </ifcount>}}}{{{ca_objects.preferred_labels.name}}}</H4>
-				<H6>{{{<unit>^ca_objects.type_id</unit>}}}</H6>
-				<HR>
-				
-				{{{<ifdef code="ca_objects.measurementSet.measurements">^ca_objects.measurementSet.measurements (^ca_objects.measurementSet.measurementsType)</ifdef><ifdef code="ca_objects.measurementSet.measurements,ca_objects.measurementSet.measurements"> x </ifdef><ifdef code="ca_objects.measurementSet.measurements2">^ca_objects.measurementSet.measurements2 (^ca_objects.measurementSet.measurementsType2)</ifdef>}}}
-				
-				
-				{{{<ifdef code="ca_objects.idno"><H6>Identificador:</H6>^ca_objects.idno<br/></ifdef>}}}
-				{{{<ifdef code="ca_objects.containerID"><H6>Box/series:</H6>^ca_objects.containerID<br/></ifdef>}}}				
-				
-				{{{<ifdef code="ca_objects.description">
+					<div id="detailAnnotations"></div>
+
+					<?php print caObjectRepresentationThumbnails($this->request, $this->getVar("representation_id"), $t_object, array("returnAs" => "bsCols", "linkTo" => "carousel", "bsColClasses" => "smallpadding col-sm-3 col-md-3 col-xs-4", "primaryOnly" => $this->getVar('representationViewerPrimaryOnly') ? 1 : 0)); ?>
+
+					<?php
+					# Comment and Share Tools
+					if ($vn_comments_enabled | $vn_share_enabled | $vn_pdf_enabled) {
+
+						print '<div id="detailTools">';
+						if ($vn_comments_enabled) {
+					?>
+							<div class="detailTool"><a href='#' onclick='jQuery("#detailComments").slideToggle(); return false;'><span class="glyphicon glyphicon-comment"></span>Comments and Tags (<?php print sizeof($va_comments) + sizeof($va_tags); ?>)</a></div><!-- end detailTool -->
+							<div id='detailComments'><?php print $this->getVar("itemComments"); ?></div><!-- end itemComments -->
+					<?php
+						}
+						if ($vn_share_enabled) {
+							print '<div class="detailTool"><span class="glyphicon glyphicon-share-alt"></span>' . $this->getVar("shareLink") . '</div><!-- end detailTool -->';
+						}
+						if ($vn_pdf_enabled) {
+							print "<div class='detailTool'><span class='glyphicon glyphicon-file'></span>" . caDetailLink($this->request, "Download as PDF", "faDownload", "ca_objects",  $vn_id, array('view' => 'pdf', 'export_format' => '_pdf_ca_objects_summary')) . "</div>";
+						}
+						print '</div><!-- end detailTools -->';
+					}
+
+					?>
+
+				</div><!-- end col -->
+
+				<div class='col-sm-6 col-md-6 col-lg-5'>
+					<H4>{{{<unit relativeTo="ca_collections" delimiter="<br/>"><l>^ca_collections.preferred_labels.name</l></unit><ifcount min="1" code="ca_collections"> ➔ </ifcount>}}}{{{ca_objects.preferred_labels.name}}}</H4>
+					<H6>{{{<unit>^ca_objects.type_id</unit>}}}</H6>
+					<HR>
+
+					{{{<ifdef code="ca_objects.measurementSet.measurements">^ca_objects.measurementSet.measurements (^ca_objects.measurementSet.measurementsType)</ifdef><ifdef code="ca_objects.measurementSet.measurements,ca_objects.measurementSet.measurements"> x </ifdef><ifdef code="ca_objects.measurementSet.measurements2">^ca_objects.measurementSet.measurements2 (^ca_objects.measurementSet.measurementsType2)</ifdef>}}}
+
+
+					{{{<ifdef code="ca_objects.idno"><H6>Identificador:</H6>^ca_objects.idno<br/></ifdef>}}}
+					{{{<ifdef code="ca_objects.containerID"><H6>Box/series:</H6>^ca_objects.containerID<br/></ifdef>}}}
+
+					{{{<ifdef code="ca_objects.description">
 					<div class='unit'><h6>Descripción</h6>
 						<span class="trimText">^ca_objects.description</span>
 					</div>
 				</ifdef>}}}
-				
-				
-				{{{<ifdef code="ca_objects.unitdate"><H6>Fecha:</H6>^ca_objects.unitdate<br/></ifdef>}}}
-			
-				<hr></hr>
-				<!-- custom code -->
-				<div class="row">
-					<div class="col-sm-6">
-						{{{<ifdef code="ca_objects.narra_num_elemento"><H6>Número del documento</H6>^ca_objects.narra_num_elemento<br/></ifdef>}}}
-						{{{<ifdef code="ca_objects.narra_tomo_titulo"><H6>Título del tomo</H6>^ca_objects.narra_tomo_titulo<br/></ifdef>}}}
-						{{{
+
+
+					{{{<ifdef code="ca_objects.unitdate"><H6>Fecha:</H6>^ca_objects.unitdate<br/></ifdef>}}}
+
+					<hr>
+					</hr>
+					<!-- custom code -->
+					<div class="row">
+						<div class="col-sm-6">
+							{{{<ifdef code="ca_objects.narra_num_elemento"><H6>Número del documento</H6>^ca_objects.narra_num_elemento<br/></ifdef>}}}
+							{{{<ifdef code="ca_objects.narra_tomo_titulo"><H6>Título del tomo</H6>^ca_objects.narra_tomo_titulo<br/></ifdef>}}}
+							{{{
 							<ifdef code="ca_objects.narra_vol_titulo">
 								<H6>Título del volumen</H6>
 								<unit relativeTo="ca_objects.narra_vol_titulo" delimiter="<br/>">^ca_objects.narra_vol_titulo</unit>
 
 							</ifdef>
 						}}}
-						{{{
+							{{{
 							<ifdef code="ca_objects.narra_secc_titulo">
 								<H6>Título de la sección</H6>
 								<unit relativeTo="ca_objects.narra_secc_titulo" delimiter="<br/>">^ca_objects.narra_secc_titulo</unit>
 							</ifdef>
 						}}}
-						{{{
+							{{{
 							<ifdef code="ca_objects.narra_edic_vol">
 								<H6>Edición del volumen</H6>
 								<unit relativeTo="ca_objects.narra_edic_vol" delimiter="<br/>">^ca_objects.narra_edic_vol</unit>
 							</ifdef>
 						}}}
-						{{{
+							{{{
 							<ifdef code="ca_objects.narra_imprenta">
 								<H6>Imprenta</H6>
 								<unit relativeTo="ca_objects.narra_imprenta" delimiter="<br/>">^ca_objects.narra_imprenta</unit>
 							</ifdef>
 						}}}
-						{{{
+							{{{
 							<ifdef code="ca_objects.pages">
 								<H6>Páginas</H6>
 								<unit relativeTo="ca_objects.pages" delimiter="<br/>">^ca_objects.pages</unit>
 							</ifdef>
 						}}}
-						{{{
+							{{{
 							<ifdef code="ca_objects.narra_biblioref">
 								<H6>Referencia bibliográfica sugerida</H6>
 								<unit relativeTo="ca_objects.narra_biblioref" delimiter="<br/>">^ca_objects.narra_biblioref</unit>
 						}}}
+						</div>
 					</div>
-				</div>
 
-				<hr></hr>
+					<hr>
+					</hr>
 					<div class="row">
-						<div class="col-sm-6">		
-						
+						<div class="col-sm-6">
+
 							{{{<ifcount code="ca_entities" min="1" max="1"><H6>Related person</H6></ifcount>}}}
 							{{{<ifcount code="ca_entities" min="2"><H6>Related people</H6></ifcount>}}}
 							{{{<unit relativeTo="ca_entities" delimiter="<br/>"><l>^ca_entities.preferred_labels</l> (^relationship_typename)</unit>}}}
-							
+
 							{{{<ifcount code="ca_places" min="1" max="1"><H6>Related place</H6></ifcount>}}}
 							{{{<ifcount code="ca_places" min="2"><H6>Related places</H6></ifcount>}}}
 							{{{<unit relativeTo="ca_places" delimiter="<br/>"><l>^ca_places.preferred_labels</l> (^relationship_typename)</unit>}}}
-							
+
 							{{{<ifcount code="ca_list_items" min="1" max="1"><H6>Related Term</H6></ifcount>}}}
 							{{{<ifcount code="ca_list_items" min="2"><H6>Related Terms</H6></ifcount>}}}
 							{{{<unit relativeTo="ca_list_items" delimiter="<br/>"><l>^ca_list_items.preferred_labels.name_plural</l> (^relationship_typename)</unit>}}}
-							
-						</div><!-- end col -->				
+
+						</div><!-- end col -->
 						<div class="col-sm-6 colBorderLeft">
 							{{{map}}}
 						</div>
 					</div><!-- end row -->
-						
-			</div><!-- end col -->
-		</div><!-- end row --></div><!-- end container -->
+
+				</div><!-- end col -->
+			</div><!-- end row -->
+		</div><!-- end container -->
 	</div><!-- end col -->
 	<div class='navLeftRight col-xs-1 col-sm-1 col-md-1 col-lg-1'>
 		<div class="detailNavBgRight">
@@ -177,8 +182,8 @@
 <script type='text/javascript'>
 	jQuery(document).ready(function() {
 		$('.trimText').readmore({
-		  speed: 75,
-		  maxHeight: 120
+			speed: 75,
+			maxHeight: 120
 		});
 	});
 </script>
