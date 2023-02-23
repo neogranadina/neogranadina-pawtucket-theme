@@ -21,7 +21,7 @@ msgid "About"
 msgstr ""
 
 #: Browse/browse_refine_subview_html.php:44
-msgid "Filter by"
+msgid "Filtrar por"
 msgstr ""
 
 #: Browse/browse_refine_subview_html.php:55 Browse/browse_results_html.php:236

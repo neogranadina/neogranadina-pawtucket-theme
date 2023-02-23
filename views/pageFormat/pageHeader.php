@@ -59,6 +59,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
+	<link href="<?php print $this->request->getThemeUrlPath(); ?>/assets/pawtucket/css/favicon.ico" rel="icon" type="image/x-icon" />
 	
 	<meta property="og:url" content="<?php print $this->request->config->get("site_host").caNavUrl($this->request, "*", "*", "*"); ?>" />
 	<meta property="og:type" content="website" />

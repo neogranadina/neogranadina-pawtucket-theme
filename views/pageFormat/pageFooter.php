@@ -32,19 +32,50 @@
 			<div class="row">
 				<div class="col-sm-12 text-center">
 					<p>
-						<a href="#" class="orgLink">Link to Main Site</a>
-						<div class="address">Address</div>
+						<a href="https://neogranadina.org" class="orgLink" target="_blank">Neogranadina</a>
 					</p>
 					<ul class="list-inline social">
-						<li><a href="#" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
-						<li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
-						<li><a href="#" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
+						<li><a href="https://www.facebook.com/neogranadina/" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+						<li><a href="https://twitter.com/neogranadina_es" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
+						<li><a href="https://www.instagram.com/neogranadina_es/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="https://github.com/neogranadina" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+						</li>
 					</ul>
 					<ul class="list-inline">
-						<li><?php print caNavLink($this->request, _t("Contact"), "", "", "Contact", "Form"); ?></li>
-						<li><?php print caNavLink($this->request, _t("Site Page"), "", "", "", ""); ?></li>
-						<li><?php print caNavLink($this->request, _t("Site Page"), "", "", "", ""); ?></li>
+						<li><a href="https://neogranadina.org/contacto", target="_blank">Contáctanos</a></li>
+<!-- 						<li><?php print caNavLink($this->request, _t("Site Page"), "", "", "", ""); ?></li>
+						<li><?php print caNavLink($this->request, _t("Site Page"), "", "", "", ""); ?></li> -->
 					</ul>
+					<p>
+					<div class="address">La Fundación Histórica Neogranadina es una persona jurídica de derecho privado, sin ánimo de lucro, constituida en la República de Colombia. N.I.T. 900.861.407.</div>
+					<!-- script para obtener la última actualización del sitio -->
+					<?php 
+					$file = '/home/process/version.txt';
+					if (file_exists($file)) {
+						$dates = file($file, FILE_IGNORE_NEW_LINES);
+						if (!empty($dates)) {
+							$latest_date = null;
+							foreach ($dates as $date) {
+								$fecha = explode(": ", $date);
+								$date = $fecha[1];
+								$timestamp = strtotime($date);
+								if (!$latest_date || $timestamp > $latest_date) {
+									$latest_date = $timestamp;
+								}
+								else {
+									$latest_date = $latest_date;
+								}
+							}
+							if ($latest_date) {
+								$formatted_date = date('d-m-Y', $latest_date);
+								echo '<div class="address">© 2023 Fundación Histórica Neogranadina. Última actualización: ' . $formatted_date . '</div>';
+							}
+						}
+					}
+					?>
+				</p>
+
+
 				</div>
 			</div>
 		</footer><!-- end footer -->
