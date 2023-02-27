@@ -101,25 +101,25 @@
 			<div class="row">
 				<div class="col-md-4">
 					<div class="hpExploreBox">
-						<?php print caNavLink($this->request, "<div class='hpExploreBoxImage hpExploreBoxImage1'></div>", "", "", "", ""); ?>
+						<?php print caNavLink($this->request, "<div class='hpExploreBoxImage hpExploreBoxImage1'></div>", "", "Detail", "collections", "7"); ?>
 						<div class="hpExploreBoxDetails">
-							<div class="hpExploreBoxTitle"><?php print caNavLink($this->request, "xxx", "", "", "", ""); ?></div>
+							<div class="hpExploreBoxTitle"><?php print caNavLink($this->request, "Narra la Independencia", "", "Detail", "collections", "7"); ?></div>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="hpExploreBox">
-						<?php print caNavLink($this->request, "<div class='hpExploreBoxImage hpExploreBoxImage1'></div>", "", "", "", ""); ?>
+						<?php print caNavLink($this->request, "<div class='hpExploreBoxImage hpExploreBoxImage2'></div>", "", "", "Browse", "collections"); ?>
 						<div class="hpExploreBoxDetails">
-							<div class="hpExploreBoxTitle"><?php print caNavLink($this->request, "xxx", "", "", "", ""); ?></div>
+							<div class="hpExploreBoxTitle"><?php print caNavLink($this->request, "pŕoximamente", "", "", "Browse", "collections"); ?></div>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="hpExploreBox">
-						<?php print caNavLink($this->request, "<div class='hpExploreBoxImage hpExploreBoxImage1'></div>", "", "", "", ""); ?>
+						<?php print caNavLink($this->request, "<div class='hpExploreBoxImage hpExploreBoxImage3'></div>", "", "", "Browse", "collections"); ?>
 						<div class="hpExploreBoxDetails">
-							<div class="hpExploreBoxTitle"><?php print caNavLink($this->request, "xxx", "", "", "", ""); ?></div>
+							<div class="hpExploreBoxTitle"><?php print caNavLink($this->request, "pŕoximamente", "", "", "Browse", "collections"); ?></div>
 						</div>
 					</div>
 				</div>

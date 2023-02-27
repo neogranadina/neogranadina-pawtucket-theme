@@ -537,20 +537,21 @@ body.frontContainer #footer{
 	margin-bottom: 45px;
 }
 .hpExploreBox .hpExploreBoxImage {
-	height:240px;
+	height: 220px;
+	width: 100%;
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-position:50%;
 	box-shadow: 0 2px 14px 0 rgba(0,0,0,.3);
 }
 .hpExploreBox .hpExploreBoxImage.hpExploreBoxImage1{
-	background-image: url('../graphics/hero_1.jpg');
+	background-image: url('../graphics/narra_5x4_@05x.png');
 }
 .hpExploreBox .hpExploreBoxImage.hpExploreBoxImage2{
 	background-image: url('../graphics/hero_1.jpg');
 }
 .hpExploreBox .hpExploreBoxImage.hpExploreBoxImage3{
-	background-image: url('../graphics/hero_1.jpg');
+	background-image: url('../graphics/hero_2.jpg');
 }
 .hpExploreBox .hpExploreBoxDetails {
 	padding: 15px 13px 22px;
@@ -560,7 +561,7 @@ body.frontContainer #footer{
 	font-size:20px;
 	line-height:28px;
 	color:#000;
-	text-transform:uppercase;
+	font-variant: small-caps;
 	margin-bottom:6px;
 	font-family: Lato;
 }
