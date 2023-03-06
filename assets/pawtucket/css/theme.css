@@ -13,6 +13,7 @@ b, strong{
 H1, h1, h2, H2, H3, h3, H4, h4, H5, h5, #footer a.orgLink{
 	color:#000;
 	font-weight:600;
+	font-family: "IM Fell DW Pica", serif;
 }
 .btn-default, .browse .btn, .sets .btn, .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active {
 	background-color:#004c52;
@@ -233,8 +234,8 @@ body{
 	margin-bottom:300px;
 }
 #footer{
-	background-color: #f2f2f2;
-	color:#000;
+	background-color: #2a2f36;
+	color:white;
 	padding-top:50px;
 	height: 260px;
 	border:0px;
@@ -245,16 +246,16 @@ body{
 }
 @media(max-width:480px){
 	/* CHANGE - does the footer height need to change for smaller screen sizes? */
-	/*#footer{
+	#footer{
 		height:430px;
-	}*/
+	}
 	/* CHANGE - does the footer offset need to change for smaller screen sizes? */
-	/*body{
+	body{
 		margin-bottom:480px;
-	}*/
+	}
 }
 #footer a{
-	color:#000;
+	color:white;
 	font-weight:bold;
 	font-size:16px;
 	text-decoration:none;
@@ -262,12 +263,12 @@ body{
 #footer a.orgLink{
 	font-family: 'IM Fell DW Pica', serif;
 	font-size:35px;
-	color:#6C7A89;
+	color:white;
 	font-weight:700;
 }
 #footer .address{
 	font-size: 14px;
-	color:#787878;
+	color:white;
 }
 @media(max-width: 768px) {
 	#footer .text-right{
@@ -276,13 +277,13 @@ body{
 }
 #footer .list-inline a{
 	font-size: 14px;
-	color: #333;
+	color: white;
 	font-weight: 400;
 	text-transform: uppercase;
 }
 #footer .social a{
 	font-size: 20px;
-	color:#333;
+	color:white;
 	font-size:25px;
 }
 #footer ul {
@@ -563,7 +564,7 @@ body.frontContainer #footer{
 	color:#000;
 	font-variant: small-caps;
 	margin-bottom:6px;
-	font-family: Lato;
+	font-family: "IM Fell DW Pica", serif;
 }
 .hpExploreBox .hpExploreBoxTitle a:hover {
 	text-decoration:none;
@@ -630,4 +631,39 @@ body.frontContainer #footer{
 }
 .collectionTile:hover{
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.objectHelp {
+	background-color: #404e61;
+	padding-top: 3rem;
+	padding-left: 4rem;
+	padding-right: 4rem;
+	padding-bottom: 3.5rem;
+	line-height: 1.5;
+	text-decoration: none;
+	color: white;
+	margin-top: 1.5rem;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+
+.objectHelp h3 {
+	font-family: 'IM Fell DW Pica', serif;
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+	color: white;
+	text-rendering: optimizeLegibility;
+}
+
+.objectHelp li {
+	padding-left: 10px;
+	padding-right: 10px;
+	list-style-type: disc;
+	margin-left: 1.25rem;
+}
+
+.objectHelp li a {
+	color: white;
+	font-weight: bold;
 }

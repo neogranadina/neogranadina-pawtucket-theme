@@ -165,8 +165,33 @@ $vn_id =				$t_object->get('ca_objects.object_id');
 						</div>
 					</div><!-- end row -->
 
+					<hr></hr>
+
+					<div class="row">
+						<div class="col-sm-6">
+							{{{<ifdef code="ca_objects.reproduction">
+							<div class='unit'><h6>Créditos</h6>
+								<span class="trimText">^ca_objects.reproduction</span>
+							</ifdef>}}}
+						</div>
+
+					</div>
+
 				</div><!-- end col -->
 			</div><!-- end row -->
+			<div class="row">
+				<div class="col-sm-12 objectHelp">
+					<h3>¿Necesitas ayuda?</h3>
+					<li>¿Has encontrado un error? Por favor, <a href="https://neogranadina.org/contacto/#formulario-de-contacto" target="_blank">avísanos</a> si hay algo que debamos corregir.</li>
+
+					<h3>Apóyanos y trabaja con nosotros</h3>
+					<p>En Neogranadina creemos que entre todos hacemos más. Siempre estamos en la búsqueda de nuevos contactos, alianzas y oportunidades.</p>
+					<li>¿Quieres que publiquemos más documentos? Ayúdanos a catalogar lo que hemos digitalizado. <a href="https://neogranadina.org/inscripcion" target="_blank">Inscríbete al proyecto de Catalogación Colaborativa</a>.</li>
+					<li>¿Eres un profesor y quieres utilizar estos materiales? Nos encantaría hablar contigo para poner nuestros recursos digitales a disposición de tus cursos y proyectos pedagógicos. <a href="https://neogranadina.org/contacto/#formulario-de-contacto" target="_blank">Contáctanos</a>.</li>
+					<li>¿Trabajas en una institución con materiales históricos? Podemos ayudarte a salvaguardar y compartir tus colecciones a través de la digitalización. <a href="https://neogranadina.org/contacto/#formulario-de-contacto" target="_blank">Contáctanos</a>.</li>
+				</div>
+
+			</div>
 		</div><!-- end container -->
 	</div><!-- end col -->
 	<div class='navLeftRight col-xs-1 col-sm-1 col-md-1 col-lg-1'>

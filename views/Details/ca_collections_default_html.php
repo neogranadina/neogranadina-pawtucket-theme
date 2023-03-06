@@ -57,7 +57,7 @@
 				<div class='col-md-12 col-lg-12'>
 					<H1>{{{^ca_collections.preferred_labels.name}}}</H1>
 					<H2>{{{^ca_collections.type_id}}}{{{<ifdef code="ca_collections.idno">, ^ca_collections.idno</ifdef>}}}</H2>
-					{{{<ifdef code="ca_collections.parent_id"><div class="unit">Part of: <unit relativeTo="ca_collections.hierarchy" delimiter=" &gt; "><l>^ca_collections.preferred_labels.name</l></unit></div></ifdef>}}}
+					{{{<ifdef code="ca_collections.parent_id"><div class="unit">Parte de: <unit relativeTo="ca_collections.hierarchy" delimiter=" &gt; "><l>^ca_collections.preferred_labels.name</l></unit></div></ifdef>}}}
 <?php					
 					if ($vn_pdf_enabled) {
 						print "<div class='exportCollection'><span class='glyphicon glyphicon-file' aria-label='"._t("Download")."'></span> ".caDetailLink($this->request, "Download as PDF", "", "ca_collections",  $vn_top_level_collection_id, array('view' => 'pdf', 'export_format' => '_pdf_ca_collections_summary'))."</div>";
@@ -67,9 +67,38 @@
 			</div><!-- end row -->
 			
 			<div class="row">			
-				<div class='col-md-6 col-lg-6'>
+				<div class='col-md-12 col-lg-12'>
 					{{{<ifdef code="ca_collections.description"><label>Acerca de</label>^ca_collections.description<br/></ifdef>}}}
-					{{{<ifcount code="ca_objects" min="1" max="1"><div class='unit'><unit relativeTo="ca_objects" delimiter=" "><l>^ca_object_representations.media.large</l><div class='caption'>Related Object: <l>^ca_objects.preferred_labels.name</l></div></unit></div></ifcount>}}}
+					{{{
+						<ifdef code="ca_collections.narra_vol_titulo">
+							<label>Título del volumen</label>^ca_collections.narra_vol_titulo<br>
+						</ifdef>
+					}}}
+					{{{
+						<ifdef code="ca_collections.narra_ed_gral">
+							<label>Edición general</label>^ca_collections.narra_ed_gral<br>
+					}}}
+					{{{
+						<ifdef code="ca_collections.narra_tomo_titulo">
+							<label>Tomo</label>^ca_collections.narra_tomo_titulo<br>
+						</ifdef>
+					}}}
+					{{{
+						<ifdef code="ca_collections.narra_vol_num">
+							<label>Volumen</label>^ca_collections.narra_vol_num<br>
+						</ifdef>
+					}}}
+					{{{
+						<ifdef code="ca_collections.narra_edic_vol">
+							<label>Edición del volumen</label>^ca_collections.narra_edic_vol<br>
+						</ifdef>
+					}}}
+					{{{
+						<ifdef code="ca_collections.narra_imprenta">
+							<label>Editor</label>^ca_collections.narra_imprenta<br>
+						</ifdef>
+					}}}
+					<!-- {{{<ifcount code="ca_objects" min="1" max="1"><div class='unit'><unit relativeTo="ca_objects" delimiter=" "><l>^ca_object_representations.media.large</l><div class='caption'>Related Object: <l>^ca_objects.preferred_labels.name</l></div></unit></div></ifcount>}}} -->
 <?php
 				# Comment and Share Tools
 				if ($vn_comments_enabled | $vn_share_enabled) {
@@ -87,11 +116,12 @@
 					print '</div><!-- end detailTools -->';
 				}				
 ?>
-					
 				</div><!-- end col -->
-				<div class='col-md-6 col-lg-6'>
-					{{{<ifcount code="ca_collections.related" min="1" max="1"><label>Related collection</label></ifcount>}}}
-					{{{<ifcount code="ca_collections.related" min="2"><label>Related collections</label></ifcount>}}}
+
+
+				<!-- <div class='col-md-6 col-lg-6'>
+					{{{<ifcount code="ca_collections.related" min="1" max="1"><label>Colección relacionada</label></ifcount>}}}
+					{{{<ifcount code="ca_collections.related" min="2"><label>Colecciones relacionadas</label></ifcount>}}}
 					{{{<unit relativeTo="ca_collections" delimiter="<br/>"><l>^ca_collections.related.preferred_labels.name</l> (^relationship_typename)</unit>}}}
 					
 					{{{<ifcount code="ca_entities" min="1" max="1"><label>Related person</label></ifcount>}}}
@@ -104,8 +134,8 @@
 					
 					{{{<ifcount code="ca_places" min="1" max="1"><label>Related place</label></ifcount>}}}
 					{{{<ifcount code="ca_places" min="2"><label>Related places</label></ifcount>}}}
-					{{{<unit relativeTo="ca_places" delimiter="<br/>"><l>^ca_places.preferred_labels.name</l> (^relationship_typename)</unit>}}}					
-				</div><!-- end col -->
+					{{{<unit relativeTo="ca_places" delimiter="<br/>"><l>^ca_places.preferred_labels.name</l> (^relationship_typename)</unit>}}}				
+				</div><!-- end col --> 
 			</div><!-- end row -->
 
 
@@ -114,7 +144,7 @@
 <?php
 			if ($vb_show_hierarchy_viewer) {	
 ?>
-				<div id="collectionHierarchy"><?php print caBusyIndicatorIcon($this->request).' '.addslashes(_t('Loading...')); ?></div>
+				<div id="collectionHierarchy"><?php print caBusyIndicatorIcon($this->request).' '.addslashes(_t('Cargando...')); ?></div>
 				<script>
 					$(document).ready(function(){
 						$('#collectionHierarchy').load("<?php print caNavUrl($this->request, '', 'Collections', 'collectionHierarchy', array('collection_id' => $t_item->get('collection_id'))); ?>"); 
@@ -129,7 +159,7 @@
 {{{<ifcount code="ca_objects" min="2">
 			<div class="row">
 				<div id="browseResultsContainer">
-					<?php print caBusyIndicatorIcon($this->request).' '.addslashes(_t('Loading...')); ?>
+					<?php print caBusyIndicatorIcon($this->request).' '.addslashes(_t('Cargando...')); ?>
 				</div><!-- end browseResultsContainer -->
 			</div><!-- end row -->
 			<script type="text/javascript">
@@ -137,7 +167,7 @@
 					jQuery("#browseResultsContainer").load("<?php print caNavUrl($this->request, '', 'Search', 'objects', array('search' => 'collection_id:^ca_collections.collection_id'), array('dontURLEncodeParameters' => true)); ?>", function() {
 						jQuery('#browseResultsContainer').jscroll({
 							autoTrigger: true,
-							loadingHtml: '<?php print caBusyIndicatorIcon($this->request).' '.addslashes(_t('Loading...')); ?>',
+							loadingHtml: '<?php print caBusyIndicatorIcon($this->request).' '.addslashes(_t('Cargando...')); ?>',
 							padding: 20,
 							nextSelector: 'a.jscroll-next'
 						});

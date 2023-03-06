@@ -25,7 +25,7 @@ print "<p>Ingrese los términos de búsqueda en este formulario.</p>";
 	<div class='row'>
 		<div class="advancedSearchField col-sm-12">
 			<span class='formLabel' data-toggle="popover" data-trigger="hover" data-content="Search records of a particular date or date range.">Rango de fechas <i>(ej. 1750-1790)</i></span>
-			{{{ca_objects.dates.dates_value%width=200px&height=40px&useDatePicker=0}}}
+			{{{ca_objects.unitdate.date_value%width=200px&height=40px&useDatePicker=0}}}
 		</div>
 	</div>
 	<div class='row'>
