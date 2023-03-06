@@ -499,7 +499,7 @@ body.frontContainer #footer{
 	text-align:center;
 	font-size: 28px;
 	color: #000;
-	margin:100px 0px 120px 0px;
+	margin:100px 0px 10px 0px;
 	font-family: 'Cormorant Garamond', serif;
 	font-weight:300;
 	line-height:1.8em;
@@ -533,12 +533,22 @@ body.frontContainer #footer{
 	opacity:.8;
 	left: 0px;
 }
-.front h2, .front h3{
+.front h2 {
+ 	text-align: center;
+    text-transform: none;
+    font-size: 36px;
+    padding-bottom: 1rem;
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+}
+
+.front h3{
 	text-align: center;
 	text-transform:none;
 	font-size:24px;
 	padding-bottom:15px;
 }
+
 .front h2.highlights{
 	padding-bottom:30px;
 }
@@ -685,4 +695,166 @@ body.frontContainer #footer{
     height: auto;
     max-height: 600px;
     object-fit: contain;
+}
+
+/* CSS página neogranadina */
+
+@media only screen and (min-width: 768px){
+    .content-wrap{
+        max-width:90%;
+        margin:0 auto
+    }
+}
+
+.portfolio{
+    padding:0 5px
+}
+.portfolio-item{
+    position:relative;
+    padding:5px;
+    float:left;
+    width:50%
+}
+.portfolio-item__link{
+    position:relative;
+    display:block
+}
+@media only screen and (min-width: 768px){
+    .portfolio-item__link:hover .portfolio-item__content{
+        opacity:1;
+        visibility:visible
+    }
+    .portfolio-item__link:hover .portfolio-item__content_perm{
+        opacity:1;
+        visibility:hidden
+    }
+}
+.portfolio-item__image{
+    width:100%
+}
+.portfolio-item__content{
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:rgba(41,98,255,0.6);
+    opacity:0;
+    visibility:hidden;
+    -webkit-transition:all 0.2s ease-in-out;
+    -moz-transition:all 0.2s ease-in-out;
+    -ms-transition:all 0.2s ease-in-out;
+    -o-transition:all 0.2s ease-in-out;
+    transition:all 0.2s ease-in-out
+}
+
+.proximamente .portfolio-item__content{
+    background:rgba(33,33,33,0.85);
+}
+
+
+.portfolio-item__info{
+    text-align:center
+}
+
+.portfolio-item__title{
+    color:#fff;
+    font-family: 'Lato';
+    font-size:19px;
+    font-weight:700;
+    letter-spacing:-.02em;
+    margin-left:20px;
+    margin-right:20px
+}
+
+
+@media only screen and (min-width: 768px){
+    .portfolio-item__title{
+        font-size:28px
+    }
+}
+@media only screen and (min-width: 1220px){
+    .portfolio-item__title{
+        font-size:32px
+    }
+}
+.portfolio-item__subtitle{
+    font-family: lato;
+    margin-top:5px;
+    color:rgba(255,255,255,0.85);
+    font-size:15px;
+    font-weight:400;
+    letter-spacing:0em;
+    margin-left:20px;
+    margin-right:20px
+}
+
+
+@media only screen and (min-width: 768px){
+    .portfolio-item__subtitle{
+        font-size:17px
+    }
+}
+@media only screen and (min-width: 1220px){
+    .portfolio-item__subtitle{
+        font-size:19px
+    }
+}
+.portfolio-item__content_perm{
+/*    position:absolute;
+    right:3px;
+    bottom:10px;
+    left:3px;*/
+    display:flex;
+    align-items:left;
+    justify-content:space-around;
+    text-align:center;
+/*    text-shadow:1px 1px 1px #000000*/
+}
+.portfolio-item__content_perm .portfolio-item__title_perm{
+/*    color:white;*/
+    font-size:16px;
+    font-weight:normal;
+    font-family:"Lato",sans-serif;
+    line-height:1em;
+    max-width:95%;
+    margin-top: 0.75rem;
+}
+@media only screen and (min-width: 768px){
+    .portfolio-item__content_perm .portfolio-item__title_perm{
+        font-size:20px
+    }
+}
+@media only screen and (min-width: 1220px){
+    .portfolio-item__content_perm .portfolio-item__title_perm{
+        font-size:25px
+    }
+}
+.portfolio-item__content_perm .portfolio-item__subtitle_perm{
+    margin-top:0px;
+    color:white;
+    font-size:10px;
+    max-width:30%;
+    text-align:right
+}
+@media only screen and (min-width: 768px){
+    .portfolio-item__content_perm .portfolio-item__subtitle_perm{
+        font-size:12px
+    }
+}
+@media only screen and (min-width: 1220px){
+    .portfolio-item__content_perm .portfolio-item__subtitle_perm{
+        font-size:14px
+    }
+}
+
+.portfolio-item img {
+	max-width: 100%;
+}
+
+.portfolio-item__title h2 {
+	font-family: 'Lato';
 }

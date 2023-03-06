@@ -78,36 +78,118 @@
 		</div>
 	</div>
 </div>
-	<div class="row hpExplore bgLightGray">
+	<div class="row hpExplore">
 		<div class="col-md-14 col-lg-10 col-lg-offset-1">
 		<H2 class="frontSubHeading text-center">Explora nuestras colecciones</H2>
 
-			<div class="row">
-				<div class="col-md-4">
-					<div class="hpExploreBox">
-						<?php print caNavLink($this->request, "<div class='hpExploreBoxImage hpExploreBoxImage1'></div>", "", "Detail", "collections", "7"); ?>
-						<div class="hpExploreBoxDetails">
-							<div class="hpExploreBoxTitle"><?php print caNavLink($this->request, "Narra la Independencia", "", "Detail", "collections", "7"); ?></div>
-						</div>
+			<section class="portfolio">
+
+				<div class="content-wrap portfolio-wrap">
+
+					
+
+					<div class="portfolio-item digitalizacion">
+
+						<a class="portfolio-item__link" href="https://abc.neogranadina.org/Detail/collections/7" id="digitalizacion">
+
+							<div class="portfolio-item__image">
+								<img src="https://abc.neogranadina.org/themes/neogranadina/assets/pawtucket/graphics/narra_sq_@05x.png" alt="Narra la independencia: fuentes documentales">
+							</div>
+							<div class="portfolio-item__content">
+								<div class="portfolio-item__info">
+									<h2 class="portfolio-item__title" style="font-family: 'Lato', sans-serif;">Narra la Independencia</h2>
+									<p class="portfolio-item__subtitle">Edición digital de la Colección documental de la Independencia del Perú</p>
+									<p class="category-subtitle"></p>
+								</div>
+							</div>
+
+						</a>
+						<a class="" href="https://abc.neogranadina.org/Detail/collections/7" id="digitalizacion">
+							<div class="portfolio-item__content_perm">
+								<h2 class="portfolio-item__title_perm" >Fuentes sobre la independencia del Perú</h2>
+							</div>
+						</a>
+
 					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="hpExploreBox">
-						<?php print caNavLink($this->request, "<div class='hpExploreBoxImage hpExploreBoxImage2'></div>", "", "", "Browse", "collections"); ?>
-						<div class="hpExploreBoxDetails">
-							<div class="hpExploreBoxTitle"><?php print caNavLink($this->request, "Pŕoximamente", "", "", "Browse", "collections"); ?></div>
-						</div>
+
+					
+
+					<div class="portfolio-item proximamente">
+
+						<a class="portfolio-item__link" href="" id="proximamente">
+
+							<div class="portfolio-item__image">
+								<img src="https://neogranadina.org/images/blocks/ccac-1x1_2.jpg" alt="Herramientas de consulta y catalogación">
+							</div>
+							<div class="portfolio-item__content">
+								<div class="portfolio-item__info">
+									<h2 class="portfolio-item__title" style="font-family: 'Lato', sans-serif;">Próximamente</h2>
+									<p class="portfolio-item__subtitle">Una plataforma de descripción archivística para todos</p>
+									<p class="category-subtitle"></p>
+								</div>
+							</div>
+						</a>
+						<a class="" href="https://abc.neogranadina.org/Detail/collections/7" id="digitalizacion">
+							<div class="portfolio-item__content_perm">
+								<h2 class="portfolio-item__title_perm" >Catálogo Colectivo de Archivos Colombianos</h2>
+							</div>
+						</a>
+
 					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="hpExploreBox">
-						<?php print caNavLink($this->request, "<div class='hpExploreBoxImage hpExploreBoxImage3'></div>", "", "", "Browse", "collections"); ?>
-						<div class="hpExploreBoxDetails">
-							<div class="hpExploreBoxTitle"><?php print caNavLink($this->request, "Pŕoximamente", "", "", "Browse", "collections"); ?></div>
-						</div>
+
+					
+
+					<div class="portfolio-item proximamente">
+
+						<a class="portfolio-item__link" href="" id="proximamente">
+
+							<div class="portfolio-item__image">
+								<img src="https://neogranadina.org/images/blocks/AHRB_Convento_3x2.jpg" alt="Archivo Histórico Regional de Boyacá">
+							</div>
+							<div class="portfolio-item__content">
+								<div class="portfolio-item__info">
+									<h2 class="portfolio-item__title" style="font-family: 'Lato', sans-serif;">Próximamente</h2>
+									<p class="portfolio-item__subtitle">Materiales digitalizados por Neogranadina en el Archivo Histórico Regional de Boyacá, Tunja, Colombia</p>
+									<p class="category-subtitle"></p>
+								</div>
+							</div>
+						</a>
+						<a class="" href="https://abc.neogranadina.org/Detail/collections/7" id="digitalizacion">
+							<div class="portfolio-item__content_perm">
+								<h2 class="portfolio-item__title_perm" >Archivo Histórico Regional de Boyacá</h2>
+							</div>
+						</a>
+
 					</div>
+					<div class="portfolio-item proximamente">
+
+						<a class="portfolio-item__link" href="" id="proximamente">
+
+							<div class="portfolio-item__image">
+								<img src="https://neogranadina.org/images/blocks/ACC_Courtyard@0.5x.jpg" alt="Antiguo Archivo Central del Cauca">
+							</div>
+							<div class="portfolio-item__content">
+								<div class="portfolio-item__info">
+									<h2 class="portfolio-item__title" style="font-family: 'Lato', sans-serif;">Próximamente</h2>
+									<p class="portfolio-item__subtitle">Materiales digitalizados por Neogranadina del fondo Antiguo Archivo Central del Cauca, en el Centro de Investigaciones Históricas José María Arboleda Llorente, Popayán, Colombia</p>
+									<p class="category-subtitle"></p>
+								</div>
+							</div>
+						</a>
+						<a class="" href="https://abc.neogranadina.org/Detail/collections/7" id="digitalizacion">
+							<div class="portfolio-item__content_perm">
+								<h2 class="portfolio-item__title_perm" >Antiguo Archivo Central del Cauca</h2>
+							</div>
+						</a>
+
+					</div>
+					
+
 				</div>
-			</div>
+
+
+			</section>
+
 		</div>
 	</div>
 
