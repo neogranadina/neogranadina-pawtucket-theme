@@ -1,19 +1,21 @@
 /* Neogranadina */
 /* fonts to change */
 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,700;1,300;1,700&family=IM+Fell+DW+Pica&display=swap');
+
 body, .detail, .gallery, label, b, strong{
-	font-family: 'Mulish', sans-serif;
+	font-family: 'Latolight', sans-serif;
 	font-weight:400;
-	color: #6C7A89;
+	color: #757575;
+	font-size: 16px;
 }
 b, strong{
-	font-family: 'Mulish', sans-serif;
+	font-family: 'Lato', sans-serif;
 	font-weight:600;
 }
 H1, h1, h2, H2, H3, h3, H4, h4, H5, h5, #footer a.orgLink{
 	color:#000;
 	font-weight:600;
-	font-family: "IM Fell DW Pica", serif;
 }
 .btn-default, .browse .btn, .sets .btn, .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active {
 	background-color:#004c52;
@@ -26,6 +28,16 @@ a{
 }
 a:hover{
 	color:#F2784B;
+}
+
+.detail a {
+    color: #252525;
+    text-decoration: none;
+}
+
+.detail a:hover {
+    color: #F2784B;
+    text-decoration: underline;
 }
 
 .bgLightGray{
@@ -84,10 +96,10 @@ a:hover{
 .pretty-text {
 /*  font-size: 20px; */
     max-width: 50%;
-    font-size: 4.4rem;
+    font-size: 5rem;
     line-height: 0.9;
     text-align: left;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Cormorant Garamond', serif;
 }  
 
 @media(max-width:480px){
@@ -112,7 +124,7 @@ a:hover{
 	    font-size: 3rem;
 	    line-height: 0.9;
 	    text-align: left;
-	    font-family: 'Libre Baskerville', serif;
+	    font-family: 'Cormorant Garamond', serif;
 	}  
 
 	.parallax {
@@ -142,10 +154,11 @@ a:hover{
 .pretty-text-nav {
 /*  font-size: 20px; */
     max-width: 30%;
-    font-size: 2.0rem;
+    font-size: 2.5rem;
     line-height: 0.9;
     text-align: left;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
 }  
 
 @media (min-width:768px){
@@ -340,7 +353,7 @@ body.frontContainer #footer{
     background-image: url("../graphics/hero_1.jpg");
 
     /* Full height */
-    height: 100vh;
+    height: 75vh;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -486,8 +499,8 @@ body.frontContainer #footer{
 	text-align:center;
 	font-size: 28px;
 	color: #000;
-	margin:120px 0px 150px 0px;
-	font-family: "Latolight";
+	margin:100px 0px 120px 0px;
+	font-family: 'Cormorant Garamond', serif;
 	font-weight:300;
 	line-height:1.8em;
 }
@@ -538,8 +551,8 @@ body.frontContainer #footer{
 	margin-bottom: 45px;
 }
 .hpExploreBox .hpExploreBoxImage {
-	height: 220px;
-	width: 100%;
+	min-height: 250px;
+	min-width: 313px;
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-position:50%;
@@ -562,9 +575,7 @@ body.frontContainer #footer{
 	font-size:20px;
 	line-height:28px;
 	color:#000;
-	font-variant: small-caps;
 	margin-bottom:6px;
-	font-family: "IM Fell DW Pica", serif;
 }
 .hpExploreBox .hpExploreBoxTitle a:hover {
 	text-decoration:none;
@@ -666,4 +677,12 @@ body.frontContainer #footer{
 .objectHelp li a {
 	color: white;
 	font-weight: bold;
+}
+
+
+.detail .repViewerCont img {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: contain;
 }
