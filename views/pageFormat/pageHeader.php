@@ -176,7 +176,8 @@
 					});
 				</script>
 				<ul class="nav navbar-nav navbar-right menuItems" role="list" aria-label="<?php print _t("Primary Navigation"); ?>">
-					<li <?php print ($this->request->getController() == "About") ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("Acerca de"), "", "", "About", "Index"); ?></li>
+					<li><a href="https://abc.neogranadina.org">Inicio</a></li>
+					<!-- <li <?php print ($this->request->getController() == "About") ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("Acerca de"), "", "", "About", "Index"); ?></li> -->
 					<?php print $this->render("pageFormat/browseMenu.php"); ?>	
 					<li <?php print ($this->request->getController() == "Collections") ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("Instituciones"), "", "", "Collections", "index"); ?></li>					
 					<!-- <li <?php print ($this->request->getController() == "Gallery") ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("Galerías"), "", "", "Gallery", "Index"); ?></li> -->
