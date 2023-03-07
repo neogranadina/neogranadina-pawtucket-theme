@@ -98,7 +98,7 @@
 							<div class="portfolio-item__content">
 								<div class="portfolio-item__info">
 									<h2 class="portfolio-item__title" style="font-family: 'Lato', sans-serif;">Narra la Independencia</h2>
-									<p class="portfolio-item__subtitle">Edición digital de la Colección documental de la Independencia del Perú</p>
+									<p class="portfolio-item__subtitle">Edición digital de la Colección documental de la Independencia del Perú, creada para el proyecto de historia pública <span style="font-style: italic;">Narra la Independencia desde tu pueblo, tu distrito o tu ciudad</span>, con la participación de voluntarios y colaboradores en el Perú y alrededor del mundo.</p>
 									<p class="category-subtitle"></p>
 								</div>
 							</div>
@@ -124,7 +124,7 @@
 							<div class="portfolio-item__content">
 								<div class="portfolio-item__info">
 									<h2 class="portfolio-item__title" style="font-family: 'Lato', sans-serif;">Próximamente</h2>
-									<p class="portfolio-item__subtitle">Una plataforma de descripción archivística para todos</p>
+									<p class="portfolio-item__subtitle">Regresa nuestra plataforma de descripción archivística para todos.</p>
 									<p class="category-subtitle"></p>
 								</div>
 							</div>
@@ -149,7 +149,7 @@
 							<div class="portfolio-item__content">
 								<div class="portfolio-item__info">
 									<h2 class="portfolio-item__title" style="font-family: 'Lato', sans-serif;">Próximamente</h2>
-									<p class="portfolio-item__subtitle">Materiales digitalizados por Neogranadina en el Archivo Histórico Regional de Boyacá, Tunja, Colombia</p>
+									<p class="portfolio-item__subtitle">Materiales digitalizados por Neogranadina en el Archivo Histórico Regional de Boyacá, Tunja, Colombia.</p>
 									<p class="category-subtitle"></p>
 								</div>
 							</div>
@@ -171,7 +171,7 @@
 							<div class="portfolio-item__content">
 								<div class="portfolio-item__info">
 									<h2 class="portfolio-item__title" style="font-family: 'Lato', sans-serif;">Próximamente</h2>
-									<p class="portfolio-item__subtitle">Materiales digitalizados por Neogranadina del fondo Antiguo Archivo Central del Cauca, en el Centro de Investigaciones Históricas José María Arboleda Llorente, Popayán, Colombia</p>
+									<p class="portfolio-item__subtitle">Materiales digitalizados por Neogranadina en el fondo Antiguo Archivo Central del Cauca, del Centro de Investigaciones Históricas José María Arboleda Llorente, Popayán, Colombia.</p>
 									<p class="category-subtitle"></p>
 								</div>
 							</div>

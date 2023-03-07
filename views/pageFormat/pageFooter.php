@@ -30,9 +30,9 @@
 		</div><!-- end pageArea --></div><!-- end main --></div><!-- end col --></div><!-- end row --></div><!-- end container -->
 		<footer id="footer" class="text-center">
 			<div class="row">
-				<div class="col-sm-6 text-right">
-					<p>
-						Esta plataforma de consulta fue desarrollada por <a href="https://neogranadina.org/" target="_blank">Neogranadina</a> con el apoyo de la <a href="https://history.ucsb.edu/" target="_blank">Universidad de California en Santa Bárbara</a>.
+				<div class="col-sm-6 text-left" style="padding-left: 50px">
+					<p style="font-size: 16px">
+						Esta plataforma de consulta fue desarrollada por <a href="https://neogranadina.org/" target="_blank">Neogranadina</a> con el apoyo de la <a href="https://history.ucsb.edu/" target="_blank">Universidad de California, Santa Bárbara</a>.
 					</p>
 					<!--<p>
 						<a href="https://neogranadina.org" class="orgLink" target="_blank">Neogranadina</a>
@@ -72,7 +72,7 @@
 				</p>
 				</div>
 				<div class="col-sm-6 text-left">
-				<img src="https://neogranadina.org/images/Logo_Neogranadina_gris.png" style="display: block; margin-left: auto; margin-right: auto; width: 200px; filter:contrast(300%);">
+				<img src="https://neogranadina.org/images/Logo_Neogranadina_gris.png" style="display: block; margin-left: auto; margin-right: 50px; width: 200px; filter:contrast(300%);">
 				</div>
 			</div>
 		</footer><!-- end footer -->

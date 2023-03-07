@@ -128,7 +128,7 @@ a:hover{
 	}  
 
 	.parallax {
-	    height: 80vh;
+	    height: 100vh;
 	}  
 }
 
@@ -497,9 +497,9 @@ body.frontContainer #footer{
 
 .hpIntro .callout{
 	text-align:center;
-	font-size: 28px;
+	font-size: 26px;
 	color: #000;
-	margin:100px 0px 10px 0px;
+	margin:50px 0px 10px 0px;
 	font-family: 'Cormorant Garamond', serif;
 	font-weight:300;
 	line-height:1.8em;
@@ -666,6 +666,7 @@ body.frontContainer #footer{
 	margin-top: 1.5rem;
 	margin-left: 0.5rem;
 	margin-right: 0.5rem;
+	font-size: 14px;
 }
 
 .objectHelp h3 {
@@ -687,13 +688,14 @@ body.frontContainer #footer{
 .objectHelp li a {
 	color: white;
 	font-weight: bold;
+	font-size: 14px;
 }
 
 
 .detail .repViewerCont img {
     width: 100%;
     height: auto;
-    max-height: 600px;
+    max-height: 700px;
     object-fit: contain;
 }
 
@@ -825,12 +827,12 @@ body.frontContainer #footer{
 }
 @media only screen and (min-width: 768px){
     .portfolio-item__content_perm .portfolio-item__title_perm{
-        font-size:20px
+        font-size:16px
     }
 }
 @media only screen and (min-width: 1220px){
     .portfolio-item__content_perm .portfolio-item__title_perm{
-        font-size:25px
+        font-size:20px
     }
 }
 .portfolio-item__content_perm .portfolio-item__subtitle_perm{
@@ -856,5 +858,9 @@ body.frontContainer #footer{
 }
 
 .portfolio-item__title h2 {
-	font-family: 'Lato';
+	font-family: 'Lato', sans-serif;
+}
+
+.detail label {
+	font-family: 'Lato', sans-serif;
 }
