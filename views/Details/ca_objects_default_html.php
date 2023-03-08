@@ -105,11 +105,6 @@ $vn_id =				$t_object->get('ca_objects.object_id');
 								<unit relativeTo="ca_objects.pages" delimiter="<br/>">^ca_objects.pages</unit>
 							</ifdef>
 						}}}
-							{{{
-							<ifdef code="ca_objects.narra_biblioref">
-								<H6>Referencia bibliográfica sugerida</H6>
-								<unit relativeTo="ca_objects.narra_biblioref" delimiter="<br/>">^ca_objects.narra_biblioref</unit>
-						}}}
 						</div>
 					</div>
 
