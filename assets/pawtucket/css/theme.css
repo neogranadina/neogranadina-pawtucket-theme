@@ -1,13 +1,16 @@
 /* Neogranadina */
 /* fonts to change */
 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,700;1,300;1,700&family=IM+Fell+DW+Pica&display=swap');
+
 body, .detail, .gallery, label, b, strong{
-	font-family: 'Mulish', sans-serif;
+	font-family: 'Latolight', sans-serif;
 	font-weight:400;
-	color: #6C7A89;
+	color: #757575;
+	font-size: 16px;
 }
 b, strong{
-	font-family: 'Mulish', sans-serif;
+	font-family: 'Lato', sans-serif;
 	font-weight:600;
 }
 H1, h1, h2, H2, H3, h3, H4, h4, H5, h5, #footer a.orgLink{
@@ -25,6 +28,16 @@ a{
 }
 a:hover{
 	color:#F2784B;
+}
+
+.detail a {
+    color: #252525;
+    text-decoration: none;
+}
+
+.detail a:hover {
+    color: #F2784B;
+    text-decoration: underline;
 }
 
 .bgLightGray{
@@ -83,10 +96,10 @@ a:hover{
 .pretty-text {
 /*  font-size: 20px; */
     max-width: 50%;
-    font-size: 4.4rem;
+    font-size: 5rem;
     line-height: 0.9;
     text-align: left;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Cormorant Garamond', serif;
 }  
 
 @media(max-width:480px){
@@ -111,11 +124,11 @@ a:hover{
 	    font-size: 3rem;
 	    line-height: 0.9;
 	    text-align: left;
-	    font-family: 'Libre Baskerville', serif;
+	    font-family: 'Cormorant Garamond', serif;
 	}  
 
 	.parallax {
-	    height: 80vh;
+	    height: 100vh;
 	}  
 }
 
@@ -141,10 +154,11 @@ a:hover{
 .pretty-text-nav {
 /*  font-size: 20px; */
     max-width: 30%;
-    font-size: 2.0rem;
+    font-size: 2.5rem;
     line-height: 0.9;
     text-align: left;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
 }  
 
 @media (min-width:768px){
@@ -233,8 +247,8 @@ body{
 	margin-bottom:300px;
 }
 #footer{
-	background-color: #f2f2f2;
-	color:#000;
+	background-color: #2a2f36;
+	color:white;
 	padding-top:50px;
 	height: 260px;
 	border:0px;
@@ -245,16 +259,16 @@ body{
 }
 @media(max-width:480px){
 	/* CHANGE - does the footer height need to change for smaller screen sizes? */
-	/*#footer{
+	#footer{
 		height:430px;
-	}*/
+	}
 	/* CHANGE - does the footer offset need to change for smaller screen sizes? */
-	/*body{
+	body{
 		margin-bottom:480px;
-	}*/
+	}
 }
 #footer a{
-	color:#000;
+	color:white;
 	font-weight:bold;
 	font-size:16px;
 	text-decoration:none;
@@ -262,12 +276,12 @@ body{
 #footer a.orgLink{
 	font-family: 'IM Fell DW Pica', serif;
 	font-size:35px;
-	color:#6C7A89;
+	color:white;
 	font-weight:700;
 }
 #footer .address{
 	font-size: 14px;
-	color:#787878;
+	color:white;
 }
 @media(max-width: 768px) {
 	#footer .text-right{
@@ -276,13 +290,13 @@ body{
 }
 #footer .list-inline a{
 	font-size: 14px;
-	color: #333;
+	color: white;
 	font-weight: 400;
 	text-transform: uppercase;
 }
 #footer .social a{
 	font-size: 20px;
-	color:#333;
+	color:white;
 	font-size:25px;
 }
 #footer ul {
@@ -339,7 +353,7 @@ body.frontContainer #footer{
     background-image: url("../graphics/hero_1.jpg");
 
     /* Full height */
-    height: 100vh;
+    height: 75vh;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -483,10 +497,10 @@ body.frontContainer #footer{
 
 .hpIntro .callout{
 	text-align:center;
-	font-size: 28px;
+	font-size: 26px;
 	color: #000;
-	margin:120px 0px 150px 0px;
-	font-family: "Latolight";
+	margin:50px 0px 10px 0px;
+	font-family: 'Cormorant Garamond', serif;
 	font-weight:300;
 	line-height:1.8em;
 }
@@ -519,12 +533,22 @@ body.frontContainer #footer{
 	opacity:.8;
 	left: 0px;
 }
-.front h2, .front h3{
+.front h2 {
+ 	text-align: center;
+    text-transform: none;
+    font-size: 36px;
+    padding-bottom: 1rem;
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+}
+
+.front h3{
 	text-align: center;
 	text-transform:none;
 	font-size:24px;
 	padding-bottom:15px;
 }
+
 .front h2.highlights{
 	padding-bottom:30px;
 }
@@ -537,8 +561,8 @@ body.frontContainer #footer{
 	margin-bottom: 45px;
 }
 .hpExploreBox .hpExploreBoxImage {
-	height: 220px;
-	width: 100%;
+	min-height: 250px;
+	min-width: 313px;
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-position:50%;
@@ -561,9 +585,7 @@ body.frontContainer #footer{
 	font-size:20px;
 	line-height:28px;
 	color:#000;
-	font-variant: small-caps;
 	margin-bottom:6px;
-	font-family: Lato;
 }
 .hpExploreBox .hpExploreBoxTitle a:hover {
 	text-decoration:none;
@@ -630,4 +652,213 @@ body.frontContainer #footer{
 }
 .collectionTile:hover{
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.objectHelp {
+	background-color: #404e61;
+	padding-top: 3rem;
+	padding-left: 4rem;
+	padding-right: 4rem;
+	padding-bottom: 3.5rem;
+	line-height: 1.5;
+	text-decoration: none;
+	color: white;
+	margin-top: 1.5rem;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+
+.objectHelp h3 {
+	font-family: 'IM Fell DW Pica', serif;
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+	color: white;
+	text-rendering: optimizeLegibility;
+}
+
+.objectHelp li {
+	padding-left: 10px;
+	padding-right: 10px;
+	list-style-type: disc;
+	margin-left: 1.25rem;
+}
+
+.objectHelp li a {
+	color: white;
+	font-weight: bold;
+}
+
+
+.detail .repViewerCont img {
+    width: 100%;
+    height: auto;
+    max-height: 700px;
+    object-fit: contain;
+}
+
+/* CSS página neogranadina */
+
+@media only screen and (min-width: 768px){
+    .content-wrap{
+        max-width:90%;
+        margin:0 auto
+    }
+}
+
+.portfolio{
+    padding:0 5px
+}
+.portfolio-item{
+    position:relative;
+    padding:5px;
+    float:left;
+    width:50%
+}
+.portfolio-item__link{
+    position:relative;
+    display:block
+}
+@media only screen and (min-width: 768px){
+    .portfolio-item__link:hover .portfolio-item__content{
+        opacity:1;
+        visibility:visible
+    }
+    .portfolio-item__link:hover .portfolio-item__content_perm{
+        opacity:1;
+        visibility:hidden
+    }
+}
+.portfolio-item__image{
+    width:100%
+}
+.portfolio-item__content{
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:rgba(41,98,255,0.6);
+    opacity:0;
+    visibility:hidden;
+    -webkit-transition:all 0.2s ease-in-out;
+    -moz-transition:all 0.2s ease-in-out;
+    -ms-transition:all 0.2s ease-in-out;
+    -o-transition:all 0.2s ease-in-out;
+    transition:all 0.2s ease-in-out
+}
+
+.proximamente .portfolio-item__content{
+    background:rgba(33,33,33,0.85);
+}
+
+
+.portfolio-item__info{
+    text-align:center
+}
+
+.portfolio-item__title{
+    color:#fff;
+    font-family: 'Lato';
+    font-size:19px;
+    font-weight:700;
+    letter-spacing:-.02em;
+    margin-left:20px;
+    margin-right:20px
+}
+
+
+@media only screen and (min-width: 768px){
+    .portfolio-item__title{
+        font-size:28px
+    }
+}
+@media only screen and (min-width: 1220px){
+    .portfolio-item__title{
+        font-size:32px
+    }
+}
+.portfolio-item__subtitle{
+    font-family: lato;
+    margin-top:5px;
+    color:rgba(255,255,255,0.85);
+    font-size:15px;
+    font-weight:400;
+    letter-spacing:0em;
+    margin-left:20px;
+    margin-right:20px
+}
+
+
+@media only screen and (min-width: 768px){
+    .portfolio-item__subtitle{
+        font-size:17px
+    }
+}
+@media only screen and (min-width: 1220px){
+    .portfolio-item__subtitle{
+        font-size:19px
+    }
+}
+.portfolio-item__content_perm{
+/*    position:absolute;
+    right:3px;
+    bottom:10px;
+    left:3px;*/
+    display:flex;
+    align-items:left;
+    justify-content:space-around;
+    text-align:center;
+/*    text-shadow:1px 1px 1px #000000*/
+}
+.portfolio-item__content_perm .portfolio-item__title_perm{
+/*    color:white;*/
+    font-size:16px;
+    font-weight:normal;
+    font-family:"Lato",sans-serif;
+    line-height:1em;
+    max-width:95%;
+    margin-top: 0.75rem;
+}
+@media only screen and (min-width: 768px){
+    .portfolio-item__content_perm .portfolio-item__title_perm{
+        font-size:16px
+    }
+}
+@media only screen and (min-width: 1220px){
+    .portfolio-item__content_perm .portfolio-item__title_perm{
+        font-size:20px
+    }
+}
+.portfolio-item__content_perm .portfolio-item__subtitle_perm{
+    margin-top:0px;
+    color:white;
+    font-size:10px;
+    max-width:30%;
+    text-align:right
+}
+@media only screen and (min-width: 768px){
+    .portfolio-item__content_perm .portfolio-item__subtitle_perm{
+        font-size:12px
+    }
+}
+@media only screen and (min-width: 1220px){
+    .portfolio-item__content_perm .portfolio-item__subtitle_perm{
+        font-size:14px
+    }
+}
+
+.portfolio-item img {
+	max-width: 100%;
+}
+
+.portfolio-item__title h2 {
+	font-family: 'Lato', sans-serif;
+}
+
+.detail label {
+	font-family: 'Lato', sans-serif;
 }

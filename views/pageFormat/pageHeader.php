@@ -95,7 +95,9 @@
 	}
 ?>
 
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Mulish:ital@0;1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=IM+Fell+DW+Pica&display=swap" rel="stylesheet">
 </head> 
 
 <body class='<?php print (strtoLower($this->request->getController()) == "front") ? "frontContainer" : ""; ?>'>
@@ -122,10 +124,10 @@
 				</button>
 			<div class="pretty-container-nav">
 						<div class="pretty-site-logo-nav">
-							<a href="http://abc.neogranadina.org"><img src="http://abc.neogranadina.org/themes/neogranadina/assets/pawtucket/graphics/neogranadina-plain.png" class="pretty-site-logo-nav-img"></a>
+							<a href="https://abc.neogranadina.org"><img src="https://abc.neogranadina.org/themes/neogranadina/assets/pawtucket/graphics/neogranadina-plain.png" class="pretty-site-logo-nav-img"></a>
 						</div>
 						<div class="pretty-text-nav">
-							<div class="pretty-title"><a href="http://abc.neogranadina.org" style="color: black; text-decoration: none;">Archivo Biblioteca Catálogo</a></div>
+							<div class="pretty-title"><a href="https://abc.neogranadina.org" style="color: black; text-decoration: none;">Archivo Biblioteca Catálogo</a></div>
 						</div>
 					</div>
 			</div>
@@ -174,7 +176,8 @@
 					});
 				</script>
 				<ul class="nav navbar-nav navbar-right menuItems" role="list" aria-label="<?php print _t("Primary Navigation"); ?>">
-					<li <?php print ($this->request->getController() == "About") ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("Acerca de"), "", "", "About", "Index"); ?></li>
+					<li><a href="https://abc.neogranadina.org">Inicio</a></li>
+					<!-- <li <?php print ($this->request->getController() == "About") ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("Acerca de"), "", "", "About", "Index"); ?></li> -->
 					<?php print $this->render("pageFormat/browseMenu.php"); ?>	
 					<li <?php print ($this->request->getController() == "Collections") ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("Instituciones"), "", "", "Collections", "index"); ?></li>					
 					<!-- <li <?php print ($this->request->getController() == "Gallery") ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("Galerías"), "", "", "Gallery", "Index"); ?></li> -->

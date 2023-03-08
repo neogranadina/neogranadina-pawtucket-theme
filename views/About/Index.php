@@ -11,7 +11,7 @@
 		<div class="col align-self-center">
 			<div class="pretty-container" style="padding-top: 5rem; padding-bottom: 5rem">
 				<div class="pretty-site-logo">
-					<img src="http://abc.neogranadina.org/themes/neogranadina/assets/pawtucket/graphics/neogranadina-plain.png" style="filter:invert(0)">
+					<img src="https://abc.neogranadina.org/themes/neogranadina/assets/pawtucket/graphics/neogranadina-plain.png" style="filter:invert(0)">
 				</div>
 				<div class="pretty-text">
 					<div class="line2" style="color: #000;">Archivo<br>Biblioteca<br>Catálogo</div>

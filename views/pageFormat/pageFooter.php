@@ -30,10 +30,13 @@
 		</div><!-- end pageArea --></div><!-- end main --></div><!-- end col --></div><!-- end row --></div><!-- end container -->
 		<footer id="footer" class="text-center">
 			<div class="row">
-				<div class="col-sm-12 text-center">
-					<p>
-						<a href="https://neogranadina.org" class="orgLink" target="_blank">Neogranadina</a>
+				<div class="col-sm-6 text-left" style="padding-left: 50px">
+					<p style="font-size: 16px">
+						Esta plataforma de consulta fue desarrollada por <a href="https://neogranadina.org/" target="_blank">Neogranadina</a> con el apoyo de la <a href="https://history.ucsb.edu/" target="_blank">Universidad de California, Santa Bárbara</a>.
 					</p>
+					<!--<p>
+						<a href="https://neogranadina.org" class="orgLink" target="_blank">Neogranadina</a>
+					</p>-->
 					<ul class="list-inline social">
 						<li><a href="https://www.facebook.com/neogranadina/" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
 						<li><a href="https://twitter.com/neogranadina_es" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
@@ -41,13 +44,6 @@
 						<li><a href="https://github.com/neogranadina" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>
 						</li>
 					</ul>
-					<ul class="list-inline">
-						<li><a href="https://neogranadina.org/contacto", target="_blank">Contáctanos</a></li>
-<!-- 						<li><?php print caNavLink($this->request, _t("Site Page"), "", "", "", ""); ?></li>
-						<li><?php print caNavLink($this->request, _t("Site Page"), "", "", "", ""); ?></li> -->
-					</ul>
-					<p>
-					<div class="address">La Fundación Histórica Neogranadina es una persona jurídica de derecho privado, sin ánimo de lucro, constituida en la República de Colombia. N.I.T. 900.861.407.</div>
 					<!-- script para obtener la última actualización del sitio -->
 					<?php 
 					$file = '/home/process/version.txt';
@@ -74,8 +70,9 @@
 					}
 					?>
 				</p>
-
-
+				</div>
+				<div class="col-sm-6 text-left">
+				<img src="https://neogranadina.org/images/Logo_Neogranadina_gris.png" style="display: block; margin-left: auto; margin-right: 50px; width: 200px; filter:contrast(300%);">
 				</div>
 			</div>
 		</footer><!-- end footer -->
