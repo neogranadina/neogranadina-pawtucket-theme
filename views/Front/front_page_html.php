@@ -81,7 +81,6 @@
 	<div class="row hpExplore">
 		<div class="col-md-14 col-lg-10 col-lg-offset-1">
 		<H2 class="frontSubHeading text-center">Explora nuestras colecciones</H2>
-		<H2 class="frontSubHeading text-center" style="font-size=30px">Explora nuestras colecciones</H2>
 
 			<section class="portfolio">
 
