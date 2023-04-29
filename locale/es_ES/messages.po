@@ -2,27 +2,27 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CollectiveAccess Pawtucket Default Theme\n"
 "POT-Creation-Date: 2016-10-10 22:50-0400\n"
-"PO-Revision-Date: 2016-10-26 16:06-0400\n"
+"PO-Revision-Date: 2023-03-05 12:34-0800\n"
 "Last-Translator: Seth <Seth@collectiveacess.org>\n"
 "Language-Team: CollectiveAccess <info@collectiveaccess.org>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.9\n"
-"X-Poedit-Basepath: ../../views\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.2.2\n"
+"X-Poedit-Basepath: ../../views\n"
 "X-Poedit-KeywordsList: _t\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: About/Index.php:4 pageFormat/pageHeader.php:139
 msgid "About"
-msgstr ""
+msgstr "Acerca de"
 
 #: Browse/browse_refine_subview_html.php:44
 msgid "Filtrar por"
-msgstr ""
+msgstr "Filtrar por"
 
 #: Browse/browse_refine_subview_html.php:55 Browse/browse_results_html.php:236
 #: Browse/hierarchy_facet_html.php:50 Browse/list_facet_html.php:72
@@ -36,356 +36,362 @@ msgstr ""
 #: Details/ca_places_default_html.php:69 Details/ca_places_default_html.php:77
 #: Details/list_facet_html.php:65
 msgid "Loading..."
-msgstr ""
+msgstr "Cargando…"
 
 #: Browse/browse_refine_subview_html.php:81
 #: Browse/browse_refine_subview_html.php:85
 msgid "and %1 more"
-msgstr ""
+msgstr "y %1 más"
 
 #: Browse/browse_refine_subview_html.php:82 Lightbox/ajax_comments.php:42
 msgid "close"
-msgstr ""
+msgstr "cerrar"
 
 #: Browse/browse_results_html.php:71 Browse/browse_results_html.php:104
 #: Classroom/set_detail_html.php:77 Classroom/set_detail_html.php:117
 #: Lightbox/set_detail_html.php:74 Lightbox/set_detail_html.php:106
 msgid "Sort by:"
-msgstr ""
+msgstr "Ordenar por:"
 
 #: Browse/browse_results_html.php:84 Classroom/set_detail_html.php:90
 #: Lightbox/set_detail_html.php:87
 msgid "desc"
-msgstr ""
+msgstr "desc"
 
 #: Browse/browse_results_html.php:84 Classroom/set_detail_html.php:90
 #: Lightbox/set_detail_html.php:87
 msgid "asc"
-msgstr ""
+msgstr "asc"
 
 #: Browse/browse_results_html.php:91
 msgid "Result"
-msgstr ""
+msgstr "Resultado"
 
 #: Browse/browse_results_html.php:91
 msgid "Results"
-msgstr ""
+msgstr "Resultados"
 
 #: Browse/browse_results_html.php:91
 msgid "%1 %2 %3"
-msgstr ""
+msgstr "%1 %2 %3"
 
 #: Browse/browse_results_html.php:98
 msgid "Add all results to %1"
-msgstr ""
+msgstr "Añadir todos los resultados a %1"
 
 #: Browse/browse_results_html.php:99
 msgid "Select results to add to %1"
-msgstr ""
+msgstr "Seleccionar los resultados para añadir a %1"
 
 #: Browse/browse_results_html.php:113 Classroom/set_detail_html.php:139
 #: Lightbox/set_detail_html.php:128
 msgid "Sort order:"
-msgstr ""
+msgstr "Orden de despliegue:"
 
 #: Browse/browse_results_html.php:114 Classroom/set_detail_html.php:140
 #: Lightbox/set_detail_html.php:129
 msgid "Ascending"
-msgstr ""
+msgstr "Ascendente"
 
 #: Browse/browse_results_html.php:115 Classroom/set_detail_html.php:141
 #: Lightbox/set_detail_html.php:130
 msgid "Descending"
-msgstr ""
+msgstr "Descendente"
 
 #: Browse/browse_results_html.php:125 Lightbox/set_detail_html.php:180
 msgid "Start Over"
-msgstr ""
+msgstr "Comenzar otra vez"
 
 #: Browse/browse_results_html.php:130
 msgid "Download results as:"
-msgstr ""
+msgstr "Descargar resultados como:"
 
 #: Browse/browse_results_html.php:145
 msgid "Add selected results to %1"
-msgstr ""
+msgstr "Añadir resultados seleccionados a %1"
 
 #: Browse/browse_results_html.php:194 Search/multisearch_results_html.php:38
 msgid "Did you mean one of these: %1?"
-msgstr ""
+msgstr "¿Quiere decir uno de estos: %1?"
 
 #: Browse/browse_results_html.php:196 Search/multisearch_results_html.php:40
 msgid "Did you mean %1?"
-msgstr ""
+msgstr "¿Quiere decir %1?"
 
 #: Browse/browse_results_images_html.php:145
 #: Browse/browse_results_list_html.php:139 Classroom/set_detail_html.php:308
 #: Lightbox/set_detail_html.php:290
 msgid "Next %1"
-msgstr ""
+msgstr "Siguiente %1"
 
 #: Browse/facet_hierarchy_ancestors_html.php:40
 msgid "Top"
-msgstr ""
+msgstr "Superior"
 
 #: Browse/facet_hierarchy_level_html.php:46
 #: Browse/facet_hierarchy_level_html.php:53
 msgid "View sub-items"
-msgstr ""
+msgstr "Ver sub-elementos"
 
 #: Browse/list_facet_html.php:64 Details/list_facet_html.php:58
 msgid "Loading"
-msgstr ""
+msgstr "Cargando"
 
 #: Classroom/form_set_info_html.php:43
 msgid "Response Information"
-msgstr ""
+msgstr "Información de respuesta"
 
 #: Classroom/form_set_info_html.php:43 Lightbox/form_set_info_html.php:41
 msgid "%1 Information"
-msgstr ""
+msgstr "%1 Información"
 
 #: Classroom/form_set_info_html.php:54 Lightbox/form_add_set_item_html.php:58
 #: Lightbox/form_set_info_html.php:52 Lightbox/form_user_group_html.php:47
 msgid "Name"
-msgstr ""
+msgstr "Nombre"
 
 #: Classroom/form_set_info_html.php:58 Classroom/list_html.php:158
 #: Lightbox/form_add_set_item_html.php:60 Lightbox/form_set_info_html.php:56
 #: Lightbox/form_user_group_html.php:51 Lightbox/user_group_list_html.php:45
 msgid "Description"
-msgstr ""
+msgstr "Descripción"
 
 #: Classroom/form_set_info_html.php:62 Classroom/set_detail_html.php:383
 #: Lightbox/form_set_info_html.php:60 Lightbox/set_detail_html.php:328
 msgid "Save"
-msgstr ""
+msgstr "Guardar"
 
 #: Classroom/list_html.php:129 Classroom/list_html.php:134
 msgid "You have no %1."
-msgstr ""
+msgstr "Usted no tiene %1."
 
 #: Classroom/list_html.php:131 Classroom/list_html.php:144
 #: Classroom/set_detail_html.php:173 Lightbox/set_detail_html.php:157
 #: Lightbox/set_list_html.php:51
 msgid "New %1"
-msgstr ""
+msgstr "Nuevo %1"
 
 #: Classroom/list_html.php:148
 msgid "New Group"
-msgstr ""
+msgstr "Nuevo grupo"
 
 #: Classroom/list_html.php:152
 msgid "%1 members"
-msgstr ""
+msgstr "%1 miembros"
 
 #: Classroom/list_html.php:160 Lightbox/user_group_list_html.php:47
 msgid "Url to join group"
-msgstr ""
+msgstr "Url para unirse al grupo"
 
 #: Classroom/list_html.php:161
 msgid "Members"
-msgstr ""
+msgstr "Miembros"
 
 #: Classroom/list_html.php:169 Lightbox/user_group_list_html.php:55
 msgid "Group has no users"
-msgstr ""
+msgstr "El grupo no tiene usuarios"
 
 #: Classroom/list_html.php:191 Classroom/set_detail_html.php:420
 #: Lightbox/set_list_html.php:192
 msgid "Delete"
-msgstr ""
+msgstr "Eliminar"
 
 #: Classroom/list_html.php:192 Classroom/set_detail_html.php:421
 #: Lightbox/set_list_html.php:193
 msgid "Cancel"
-msgstr ""
+msgstr "Cancelar"
 
 #: Classroom/list_html.php:203 Classroom/set_detail_html.php:433
 #: Lightbox/set_list_html.php:204
 msgid ""
 "Really delete <strong><em>%1</em></strong>? This action cannot be undone."
 msgstr ""
+"¿Eliminar definitivamente <strong><em>%1</em></strong>? Esta acción no puede "
+"deshacerse."
 
 #: Classroom/set_access_html.php:40 Lightbox/set_access_html.php:39
 msgid "%1 Access"
-msgstr ""
+msgstr "%1 Acceso"
 
 #: Classroom/set_access_html.php:49
 msgid "Groups"
-msgstr ""
+msgstr "Grupos"
 
 #: Classroom/set_access_html.php:52 Classroom/set_access_html.php:63
 #: Lightbox/set_access_html.php:51 Lightbox/set_access_html.php:64
 msgid "remove access"
-msgstr ""
+msgstr "eliminar acceso"
 
 #: Classroom/set_access_html.php:58 Lightbox/set_access_html.php:59
 #: Lightbox/user_group_list_html.php:49
 msgid "Users"
-msgstr ""
+msgstr "Usuarios"
 
 #: Classroom/set_access_html.php:65 Lightbox/set_access_html.php:66
 msgid "Owner"
-msgstr ""
+msgstr "Dueño"
 
 #: Classroom/set_detail_html.php:127 Lightbox/set_detail_html.php:116
 msgid "Refine sort by:"
-msgstr ""
+msgstr "Refinar orden según:"
 
 #: Classroom/set_detail_html.php:145 Lightbox/set_detail_html.php:134
 msgid "All %1"
-msgstr ""
+msgstr "Todos %1"
 
 #: Classroom/set_detail_html.php:150 Lightbox/set_detail_html.php:139
 msgid "Edit Name/Description"
-msgstr ""
+msgstr "Editar nombre/Descripción"
 
 #: Classroom/set_detail_html.php:154 Lightbox/form_share_set_html.php:37
 #: Lightbox/set_detail_html.php:140
 msgid "Share %1"
-msgstr ""
+msgstr "Compartir %1"
 
 #: Classroom/set_detail_html.php:155 Lightbox/set_detail_html.php:141
 msgid "Manage %1 Access"
-msgstr ""
+msgstr "Gestionar %1 acceso"
 
 #: Classroom/set_detail_html.php:160 Lightbox/set_detail_html.php:145
 msgid "Start presentation"
-msgstr ""
+msgstr "Empezar presentación"
 
 #: Classroom/set_detail_html.php:165 Lightbox/set_detail_html.php:150
 msgid "Download as:"
-msgstr ""
+msgstr "Descargar como:"
 
 #: Classroom/set_detail_html.php:175 Lightbox/set_detail_html.php:159
 #: Lightbox/set_list_html.php:53
 msgid "New User Group"
-msgstr ""
+msgstr "Nuevo grupo de usuario"
 
 #: Classroom/set_detail_html.php:179 Lightbox/set_detail_html.php:163
 #: Lightbox/set_list_html.php:57
 msgid "Manage Your User Groups"
-msgstr ""
+msgstr "Gestionar tus grupos de usuario"
 
 #: Classroom/set_detail_html.php:213
 msgid "Created by"
-msgstr ""
+msgstr "Creado por"
 
 #: Classroom/set_detail_html.php:229 Lightbox/set_detail_html.php:213
 msgid ""
 "Displaying %1 view because required data is not available to generate a %1 "
 "view"
 msgstr ""
+"Mostrar %1 vista porque los datos requeridos no están disponibles para "
+"generar un %1 vista"
 
 #: Classroom/set_detail_html.php:313 Lightbox/set_detail_html.php:295
 msgid "Click the %1 near items throughout the site to add items to this %2."
 msgstr ""
+"Haga click en el %1 cercano a los elementos a lo largo del sitio para añadir "
+"elementos a este %2."
 
 #: Classroom/set_detail_html.php:353
 msgid "Respond"
-msgstr ""
+msgstr "Responder"
 
 #: Classroom/set_detail_html.php:359
 msgid "%1 Response%2"
-msgstr ""
+msgstr "%1 Respuesta%2"
 
 #: Classroom/set_detail_html.php:375
 msgid "Comments"
-msgstr ""
+msgstr "Comentarios"
 
 #: Classroom/set_detail_html.php:379 Lightbox/set_detail_html.php:323
 msgid "add your comment"
-msgstr ""
+msgstr "añada su comentario"
 
 #: Collections/index_html.php:21
 msgid "No collections available"
-msgstr ""
+msgstr "No hay colecciones disponibles"
 
 #: Contact/form_html.php:7 Contact/success_html.php:1
 #: pageFormat/pageHeader.php:143
 msgid "Contact"
-msgstr ""
+msgstr "Contacto"
 
 #: Contact/success_html.php:2
 msgid "Your message has been sent."
-msgstr ""
+msgstr "Su mensaje ha sido enviado."
 
 #: Contribute/spam_check_html.php:40
 msgid "Simple Math Quiz (to prevent SPAMbots)"
-msgstr ""
+msgstr "Quiz simple de matemáticas (para prevenir SPAMbots)"
 
 #: Contribute/spam_check_html.php:55
 msgid "Please correctly answer the security question."
-msgstr ""
+msgstr "Por favor responda correctamente la pregunta de seguridad."
 
 #: Contribute/terms_and_conditions_check_html.php:38
 msgid "Terms and conditions"
-msgstr ""
+msgstr "Términos y condiciones"
 
 #: Contribute/terms_and_conditions_check_html.php:42
 msgid "I agree to the Terms and Conditions set out herein"
-msgstr ""
+msgstr "Estoy de acuerdo con los Términos y Condiciones establecidos aquí"
 
 #: Contribute/terms_and_conditions_check_html.php:52
 msgid "You must agree to the terms and conditions before proceeding."
-msgstr ""
+msgstr "Debe aceptar los términos y condiciones antes de continuar."
 
 #: Details/annotations_html.php:35
 msgid "Featured clips (%1)"
-msgstr ""
+msgstr "Clips destacados (%1)"
 
 #: Details/form_comments_html.php:5
 msgid "Add your tags and comment"
-msgstr ""
+msgstr "Añada sus etiquetas y comentarios"
 
 #: Details/form_comments_html.php:13
 msgid "Tags"
-msgstr ""
+msgstr "Etiquetas"
 
 #: Details/form_comments_html.php:13
 msgid "tags separated by commas"
-msgstr ""
+msgstr "etiquetas separadas por comas"
 
 #: Details/form_comments_html.php:14
 msgid "Comment"
-msgstr ""
+msgstr "Comentar"
 
 #: Details/form_share_html.php:23
 msgid "Share this item"
-msgstr ""
+msgstr "Compartir este elemento"
 
 #: Details/form_share_html.php:34
 msgid "To e-mail address"
-msgstr ""
+msgstr "A dirección de correo electrónico"
 
 #: Details/form_share_html.php:34
 msgid "Enter multiple addresses separated by commas"
-msgstr ""
+msgstr "Ingresar varias direcciones separadas por comas"
 
 #: Details/form_share_html.php:38
 msgid "Your name"
-msgstr ""
+msgstr "Su nombre"
 
 #: Details/form_share_html.php:42
 msgid "Your email address"
-msgstr ""
+msgstr "Su correo electrónico"
 
 #: Details/form_share_html.php:52 LoginReg/form_register_html.php:46
 msgid "Security Question"
-msgstr ""
+msgstr "Pregunta de seguridad"
 
 #: Details/form_share_html.php:68
 msgid "Subject"
-msgstr ""
+msgstr "Materia"
 
 #: Details/form_share_html.php:72
 msgid "Message"
-msgstr ""
+msgstr "Mensaje"
 
 #: Details/viewer_help_html.php:3
 msgid "How to use the image viewer"
-msgstr ""
+msgstr "Cómo usar el visualizador de imagen"
 
 #: Details/viewer_help_html.php:6
 msgid ""
@@ -397,6 +403,14 @@ msgid ""
 "\tdetail as you zoom. The more you zoom the more detail will be visible.\n"
 "\t"
 msgstr ""
+"Haga click y arrastre con el mouse para desplazarse por la imagen. Puede "
+"usar la rueda del mouse o el trackpad para alejar o acercar la imagen. \n"
+"\tTambién puede usar los botones <code>+</code> y <code>-</code> y la barra "
+"deslizante en la parte superior del visualizador. El visualizador muestra la "
+"imagen con resolución completa, cargando \n"
+"\tdetalles a medida que le aumente el zoom. Mientras más aumente el zoom, "
+"más detalles serán visibles.\n"
+"\t"
 
 #: Details/viewer_help_html.php:12
 msgid ""
@@ -406,6 +420,10 @@ msgid ""
 "\tselect the point (line icon), rectangle or polygon tool from the tool bar, "
 "then click on the location you wish to annotate. "
 msgstr ""
+"Puede añadir anotaciones a la imagen. Cada anotación está asociada con un "
+"punto, área rectangular o polígono en la imagen. Para crear una anotación\n"
+"\tseleccione la herramienta de punto (ícono de línea), rectángulo o polígono "
+"de la barra de herramientas, luego haga click en el lugar que desee anotar. "
 
 #: Details/viewer_help_html.php:16
 msgid ""
@@ -413,6 +431,10 @@ msgid ""
 "box. The location will also be highlighted with a red translucent circle. "
 "You may drag both the point of the line and the text box to adjust position."
 msgstr ""
+"Para las anotaciones de punto, aparecerá una línea que conecta la ubicación "
+"con un cuadro de texto. La ubicación también se resaltará con un círculo "
+"rojo translúcido. Puede arrastrar tanto el punto de la línea como el cuadro "
+"de texto para ajustar la posición."
 
 #: Details/viewer_help_html.php:19
 msgid ""
@@ -420,6 +442,10 @@ msgid ""
 "and adjacent. Drag on the edges at the highlighted locations to resize the "
 "rectangle. Drag the rectangle on its interior to reposition it."
 msgstr ""
+"Para las anotaciones rectangulares, aparecerá un rectángulo con un cuadro de "
+"texto debajo y al lado. Arrastre sobre los bordes en los lugares resultados "
+"para cambiar el tamaño del rectángulo. Arrastre el rectángulo desde su "
+"interior para reubicarlo."
 
 #: Details/viewer_help_html.php:22
 msgid ""
@@ -435,346 +461,369 @@ msgid ""
 "holding down the option key.\n"
 "\t"
 msgstr ""
+"Para anotaciones de polígono haga click \n"
+"\trepetídamente en la imagen para establecer segmentos de línea en varios "
+"lugares para la forma del polígono. La forma puede tener cualquier número de "
+"puntos, y en consecuencia de lados. Para completar la forma haga doble "
+"click\n"
+"\tal poner el último punto o haga click en las herramientas de panorámica, "
+"rectángulo o punto. Puede ajustar la forma dando click y arrastrando "
+"cualquier punto. Para mover la forma, haga click y arrastre en el contorno,\n"
+"\tlejos de cualquier punto. Para eliminar un punto, haga click en él "
+"mientras mantiene pulsada la tecla Opción. Para añadir un punto, haga click "
+"en el contorno, lejos de cualquier punto, mientras mantiene pulsada la tecla "
+"Opción.\n"
+"\t"
 
 #: Details/viewer_help_html.php:29
 msgid ""
 "You may also drag the text box into position. Click on the text box to add "
 "text. All changes to annotations are saved automatically as you work."
 msgstr ""
+"También puede arrastrar el cuadro de texto hasta su posición. Haga click en "
+"el cuadro de texto para añadir texto. Todos los cambios en las anotaciones "
+"se guardan automáticamente mientras trabaja."
 
 #: Details/viewer_help_html.php:32
 msgid "Keyboard shortcuts"
-msgstr ""
+msgstr "Atajos de teclado"
 
 #: Details/viewer_help_html.php:35
 msgid ""
 "Single-key shortcuts are available for common actions. Pressing the key is "
 "equivalent to the corresponding mouse action."
 msgstr ""
+"Hay atajos del teclados disponibles para acciones comunes. Pulsar una tecla "
+"es equivalente a una acción del mouse."
 
 #: Details/viewer_help_html.php:38
 msgid "%1 to activate image panning"
-msgstr ""
+msgstr "%1 para activar la panorámica de la imagen"
 
 #: Details/viewer_help_html.php:39
 msgid "%1 to select the rectangle annotation tool"
-msgstr ""
+msgstr "%1 para seleccionar la herramienta de anotación de rectángulo"
 
 #: Details/viewer_help_html.php:40
 msgid "%1 to select the point annotation tool"
-msgstr ""
+msgstr "%1 para seleccionar la herramienta de anotación de punto"
 
 #: Details/viewer_help_html.php:41
 msgid "%1 to select the polygon annotation tool"
-msgstr ""
+msgstr "%1 para seleccionar la herramienta de anotación de polígono"
 
 #: Details/viewer_help_html.php:42
 msgid "%1 to delete the selected annotation"
-msgstr ""
+msgstr "%1 para eliminar la anotación seleccionada"
 
 #: Details/viewer_help_html.php:43
 msgid "%1 to toggle visibility of the image overview"
-msgstr ""
+msgstr "%1 para cambiar la vista general de la imagen"
 
 #: Details/viewer_help_html.php:44
 msgid "%1 to return the image to the centered, zoomed out \"home\" position"
-msgstr ""
+msgstr "%1 para devolver la imagen a la posición “inicial” centrada y alejada"
 
 #: Details/viewer_help_html.php:45
 msgid "%1 to toggle visibility of viewer controls"
-msgstr ""
+msgstr "%1 para cambiar la visualización de los controles del visor"
 
 #: Details/viewer_help_html.php:46
 msgid "%1 to hide controls and labels"
-msgstr ""
+msgstr "%1 para ocultar controles y etiquetas"
 
 #: Details/viewer_help_html.php:47
 msgid "%1 or %2 to zoom in in small increments"
-msgstr ""
+msgstr "%1 o %2 para aumentar el tamaño en pequeños segmentos"
 
 #: Details/viewer_help_html.php:48
 msgid "%1 or %2 to zoom out in small increments"
-msgstr ""
+msgstr "%1 o %2 para reducir el tamaño en pequeños segmentos"
 
 #: Details/viewer_help_html.php:49
 msgid "%1, %2, %3 or %4 to pan the image in small increments"
-msgstr ""
+msgstr "%1, %2, %3 o %4 para desplazar la imagen en pequeños segmentos"
 
 #: Gallery/detail_html.php:61
 msgid "more"
-msgstr ""
+msgstr "más"
 
 #: Gallery/index_html.php:37 Gallery/set_info_html.php:12
 msgid "item"
-msgstr ""
+msgstr "elemento"
 
 #: Gallery/index_html.php:37 Gallery/set_info_html.php:12
 msgid "items"
-msgstr ""
+msgstr "elementos"
 
 #: Gallery/set_info_html.php:15
 msgid "view %1"
-msgstr ""
+msgstr "ver %1"
 
 #: Gallery/set_item_info_html.php:13
 msgid "VIEW RECORD"
-msgstr ""
+msgstr "VER HISTORIAL"
 
 #: Lightbox/ajax_comments.php:44
 msgid "comment"
-msgstr ""
+msgstr "comentario"
 
 #: Lightbox/ajax_comments.php:44
 msgid "comments"
-msgstr ""
+msgstr "comentarios"
 
 #: Lightbox/exportTemplates/ca_objects_sets_pdf_html.php:53
 msgid "%1 item"
-msgstr ""
+msgstr "%1 elemento"
 
 #: Lightbox/exportTemplates/ca_objects_sets_pdf_html.php:53
 msgid "%1 items"
-msgstr ""
+msgstr "%1 elementos"
 
 #: Lightbox/form_add_set_item_html.php:38
 msgid "Add item to %1"
-msgstr ""
+msgstr "Añadir elemento a %1"
 
 #: Lightbox/form_add_set_item_html.php:49
 msgid "Select a %1"
-msgstr ""
+msgstr "Seleccionar un %1"
 
 #: Lightbox/form_add_set_item_html.php:56
 msgid "OR<br/>Create a New %1"
-msgstr ""
+msgstr "O<br/>Crear un nuevo %1"
 
 #: Lightbox/form_add_set_item_html.php:58
 msgid "Your %1"
-msgstr ""
+msgstr "Su %1"
 
 #: Lightbox/form_share_set_html.php:52
 msgid "Select a group"
-msgstr ""
+msgstr "Seleccionar un grupo"
 
 #: Lightbox/form_share_set_html.php:53
 msgid "Select a user group"
-msgstr ""
+msgstr "Seleccionar un grupo de usuario"
 
 #: Lightbox/form_share_set_html.php:63
 msgid "OR enter a user"
-msgstr ""
+msgstr "O ingrese un usuario"
 
 #: Lightbox/form_share_set_html.php:63
 msgid "Enter a user"
-msgstr ""
+msgstr "Ingrese un usuario"
 
 #: Lightbox/form_share_set_html.php:63
 msgid "email address or multiple addresses separated by comma"
-msgstr ""
+msgstr "correo electrónico o múltiples correos separados por coma"
 
 #: Lightbox/form_share_set_html.php:68
 msgid "Access"
-msgstr ""
+msgstr "Acceso"
 
 #: Lightbox/form_share_set_html.php:69
 msgid "Can read"
-msgstr ""
+msgstr "Puede leer"
 
 #: Lightbox/form_share_set_html.php:70
 msgid "Can edit"
-msgstr ""
+msgstr "Puede editar"
 
 #: Lightbox/present_html.php:64
 msgid "Back to %1"
-msgstr ""
+msgstr "Volver a %1"
 
 #: Lightbox/set_access_html.php:48
 msgid "User Groups"
-msgstr ""
+msgstr "Grupos de usuario"
 
 #: Lightbox/set_access_html.php:51 Lightbox/set_access_html.php:64
 msgid "change access"
-msgstr ""
+msgstr "cambiar acceso"
 
 #: Lightbox/set_access_html.php:52 Lightbox/set_access_html.php:66
 msgid "write access"
-msgstr ""
+msgstr "acceso de escritura"
 
 #: Lightbox/set_access_html.php:52 Lightbox/set_access_html.php:66
 msgid "read access"
-msgstr ""
+msgstr "acceso de lectura"
 
 #: Lightbox/set_access_html.php:53 Lightbox/set_access_html.php:67
 msgid "Change to read access"
-msgstr ""
+msgstr "Cambiar el acceso de lectura"
 
 #: Lightbox/set_access_html.php:53 Lightbox/set_access_html.php:67
 msgid "Change to write access"
-msgstr ""
+msgstr "Cambiar el acceso de escritura"
 
 #: Lightbox/set_comment_html.php:37
 msgid "Remove comment"
-msgstr ""
+msgstr "Eliminar comentario"
 
 #: Lightbox/set_detail_html.php:297
 msgid "There are no items in this %1"
-msgstr ""
+msgstr "No hay elementos en este %1"
 
 #: Lightbox/set_detail_html.php:312
 msgid "You may not edit this set, you have read only access."
-msgstr ""
+msgstr "No puede editar este conjunto, usted solo tiene acceso de lectura."
 
 #: Lightbox/set_detail_item_html.php:59
 msgid "View Item Detail"
-msgstr ""
+msgstr "Ver detalle de elemento"
 
 #: Lightbox/set_detail_item_html.php:62
 msgid "Enlarge Image"
-msgstr ""
+msgstr "Agrandar imagen"
 
 #: Lightbox/set_list_html.php:99
 msgid "Activity stream"
-msgstr ""
+msgstr "Lista de actividad"
 
 #: Lightbox/set_list_html.php:111
 msgid "added an item to %1"
-msgstr ""
+msgstr "se ha añadido un elemento a %1"
 
 #: Lightbox/set_list_html.php:115
 msgid "changed an item in %1"
-msgstr ""
+msgstr "se ha modificado un elemento en %1"
 
 #: Lightbox/set_list_html.php:119
 msgid "removed and item from %1"
-msgstr ""
+msgstr "se ha eliminado un elemento de %1"
 
 #: Lightbox/set_list_html.php:129
 msgid "shared %1 with %2"
-msgstr ""
+msgstr "se ha compartido %1 con %2"
 
 #: Lightbox/set_list_html.php:133
 msgid "changed how they share %1 with %2"
-msgstr ""
+msgstr "se ha modificado la forma de compartir %1 con %2"
 
 #: Lightbox/set_list_html.php:137
 msgid "unshared %1 with %2"
-msgstr ""
+msgstr "no compartido %1 con %2"
 
 #: Lightbox/set_list_html.php:145
 msgid "commented on %1"
-msgstr ""
+msgstr "comentó en %1"
 
 #: Lightbox/set_list_html.php:147
 msgid "commented on an item in %1"
-msgstr ""
+msgstr "comentó en un elemento en %1"
 
 #: Lightbox/set_list_html.php:155
 msgid "made %1"
-msgstr ""
+msgstr "realizados %1"
 
 #: Lightbox/set_list_html.php:159
 msgid "edited %1"
-msgstr ""
+msgstr "editados %1"
 
 #: Lightbox/set_list_html.php:163
 msgid "deleted %1"
-msgstr ""
+msgstr "eliminados %1"
 
 #: Lightbox/set_list_item_placeholder_html.php:33
 msgid "Create your first %1"
-msgstr ""
+msgstr "Cree su primer %1"
 
 #: Lightbox/user_group_list_html.php:36
 msgid "Your User Groups"
-msgstr ""
+msgstr "Tus grupos de usuarios"
 
 #: Lightbox/user_group_list_html.php:61
 msgid "You have made no user groups"
-msgstr ""
+msgstr "No has establecido grupos de usuario"
 
 #: LoginReg/form_login_html.php:10 pageFormat/pageHeader.php:47
 msgid "Login"
-msgstr ""
+msgstr "Ingresar"
 
 #: LoginReg/form_login_html.php:18
 msgid "E-mail address"
-msgstr ""
+msgstr "Correo electrónico"
 
 #: LoginReg/form_login_html.php:24
 msgid "Password"
-msgstr ""
+msgstr "Contraseña"
 
 #: LoginReg/form_login_html.php:41 LoginReg/form_login_html.php:50
 msgid "Click here to register"
-msgstr ""
+msgstr "Haga click aquí para registrarse"
 
 #: LoginReg/form_login_html.php:46 LoginReg/form_login_html.php:52
 msgid "Forgot your password?"
-msgstr ""
+msgstr "¿Olvidó su contraseña?"
 
 #: LoginReg/form_profile_html.php:15
 msgid "Profile"
-msgstr ""
+msgstr "Perfil"
 
 #: LoginReg/form_profile_html.php:46
 msgid "Reset Password"
-msgstr ""
+msgstr "Cambiar contraseña"
 
 #: LoginReg/form_profile_html.php:47
 msgid "Only enter if you would like to change your current password"
-msgstr ""
+msgstr "Solo ingrese si le gustaría cambiar su contraseña actual"
 
 #: LoginReg/form_profile_html.php:50 LoginReg/form_register_html.php:64
 msgid "Re-Type password"
-msgstr ""
+msgstr "Reingresar contraseña"
 
 #: LoginReg/form_register_html.php:16 pageFormat/pageHeader.php:48
 msgid "Register"
-msgstr ""
+msgstr "Registrarse"
 
 #: LoginReg/form_reset_html.php:8
 msgid "Reset Your Password"
-msgstr ""
+msgstr "Cambiar contraseña"
 
 #: LoginReg/form_reset_html.php:17
 msgid "Instructions have been sent to the e-mail address you provided."
 msgstr ""
+"Las instrucciones han sido enviadas al correo electrónicos que ingresó."
 
 #: LoginReg/form_reset_html.php:20
 msgid ""
 "You should receive the instructions within the hour. If you do not, contact "
 "us for assistance at "
 msgstr ""
+"Recibirá instrucciones en el transcurso de una hora. Si no, por favor "
+"contáctenos en "
 
 #: LoginReg/form_reset_html.php:29
 msgid "Your password has been reset!"
-msgstr ""
+msgstr "¡Tu contraseña ha sido cambiada!"
 
 #: LoginReg/form_reset_html.php:31
 msgid "You may now"
-msgstr ""
+msgstr "Ahora puede"
 
 #: LoginReg/form_reset_html.php:31
 msgid "login"
-msgstr ""
+msgstr "ingresar"
 
 #: LoginReg/form_reset_html.php:40
 msgid ""
 "Please confirm you have copied the provided link properly.  If you continue "
 "to have difficulty, contact us for assistance,"
 msgstr ""
+"Por favor confirme que ha copiado correctamente el enlace que recibió. Si "
+"continúa teniendo problemas, por favor contáctenos,"
 
 #: LoginReg/form_reset_html.php:48
 msgid "Please enter your new password."
-msgstr ""
+msgstr "Por favor reingrese su nueva contraseña."
 
 #: LoginReg/form_reset_html.php:53
 msgid "New password"
-msgstr ""
+msgstr "Nueva contraseña"
 
 #: LoginReg/form_reset_html.php:59
 msgid "Confirm new password"
-msgstr ""
+msgstr "Confirmar nueva contraseña"
 
 #: LoginReg/form_reset_html.php:78
 msgid ""
@@ -782,10 +831,13 @@ msgid ""
 "A message will be sent to the address with instructions on how to reset your "
 "password."
 msgstr ""
+"Para cambiar su contraseña ingrese el correo electrónico que usó para "
+"registrarse. Se le enviará un mensaje al correo electrónico con las "
+"instrucciones sobre cómo cambiar su contraseña."
 
 #: LoginReg/form_reset_html.php:81
 msgid "E-mail"
-msgstr ""
+msgstr "Correo electrónico"
 
 #: Search/ca_collections_search_subview_html.php:55
 #: Search/ca_entities_search_subview_html.php:49
@@ -793,7 +845,7 @@ msgstr ""
 #: Search/ca_occurrences_search_subview_html.php:49
 #: Search/ca_places_search_subview_html.php:49
 msgid "Full results"
-msgstr ""
+msgstr "Resultados completos"
 
 #: Search/ca_collections_search_subview_html.php:59
 #: Search/ca_entities_search_subview_html.php:53
@@ -801,66 +853,67 @@ msgstr ""
 #: Search/ca_occurrences_search_subview_html.php:53
 #: Search/ca_places_search_subview_html.php:53
 msgid "sort by:"
-msgstr ""
+msgstr "organizar por:"
 
 #: Search/multisearch_results_html.php:19
 msgid "Search results for %1"
-msgstr ""
+msgstr "Buscar resultados por %1"
 
 #: Search/multisearch_results_html.php:33
 msgid "Your search for %1 returned no results"
-msgstr ""
+msgstr "Su búsqueda de %1 no tuvo ningún resultado"
 
 #: bundles/ca_search_form_attributes.php:52
 #: bundles/ca_simple_form_attributes.php:52
 msgid "Locale "
-msgstr ""
+msgstr "Localización "
 
 #: bundles/representation_viewer_html.php:47
 msgid "Previous"
-msgstr ""
+msgstr "Previo"
 
 #: bundles/representation_viewer_html.php:48
 msgid "Next"
-msgstr ""
+msgstr "Siguiente"
 
 #: pageFormat/browseMenu.php:38 pageFormat/browseMenu.php:50
 #: pageFormat/browseMenu.php:59
 msgid "Browse"
-msgstr ""
+msgstr "Examinar"
 
 #: pageFormat/browseMenuFacets.php:36
 msgid "Browse by:"
-msgstr "Explorar según"
+msgstr "Examinar por:"
 
 #: pageFormat/browseMenuFacets.php:49
 msgid "Filter facet"
-msgstr ""
+msgstr "Filtro de propiedades"
 
 #: pageFormat/browseMenuFacets.php:53
 msgid ""
 "Browse all %1 &nbsp;<span class=\"glyphicon glyphicon-arrow-right\"></span>"
 msgstr ""
+"Examinar todos %1 &nbsp;<span class=“glyphicon glyphicon-arrow-right”></span>"
 
 #: pageFormat/browseMenuFacets.php:59
 msgid "No facets available"
-msgstr ""
+msgstr "No hay propiedades disponibles"
 
 #: pageFormat/pageHeader.php:44
 msgid "User Profile"
-msgstr ""
+msgstr "Perfil de usuario"
 
 #: pageFormat/pageHeader.php:45
 msgid "Logout"
-msgstr ""
+msgstr "Salir"
 
 #: pageFormat/pageHeader.php:141
 msgid "Advanced Search"
-msgstr ""
+msgstr "Búsqueda avanzada"
 
 #: pageFormat/pageHeader.php:142
 msgid "Gallery"
-msgstr ""
+msgstr "Galeria"
 
 #: system/configuration_error_install_html.php:36
 msgid ""
@@ -872,3 +925,10 @@ msgid ""
 "\t    For more specific hints on the existing issues please have a look at "
 "the messages below."
 msgstr ""
+"<div class=‘error’>Ha sido detectado un error en su configuración del "
+"sistema</div>\n"
+"\t    Instrucciones de instalación general pueden encontrarse\n"
+"\t    <a href=‘http://wiki.collectiveaccess.org/index.php?"
+"title=Installation_(Pawtucket)' target=‘_blank’>aquí</a>.\n"
+"\t    Para más recomendaciones específicas sobre problemas existentes por "
+"favor lea los mensajes a continuación."

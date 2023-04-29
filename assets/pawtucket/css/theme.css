@@ -666,7 +666,6 @@ body.frontContainer #footer{
 	margin-top: 1.5rem;
 	margin-left: 0.5rem;
 	margin-right: 0.5rem;
-	font-size: 14px;
 }
 
 .objectHelp h3 {
@@ -688,7 +687,6 @@ body.frontContainer #footer{
 .objectHelp li a {
 	color: white;
 	font-weight: bold;
-	font-size: 14px;
 }
 
 

@@ -81,7 +81,6 @@
 	<div class="row hpExplore">
 		<div class="col-md-14 col-lg-10 col-lg-offset-1">
 		<H2 class="frontSubHeading text-center">Explora nuestras colecciones</H2>
-		<H2 class="frontSubHeading text-center" style="font-size=30px">Explora nuestras colecciones</H2>
 
 			<section class="portfolio">
 
@@ -140,44 +139,44 @@
 
 					
 
-					<div class="portfolio-item proximamente">
+					<div class="portfolio-item digitalizacion">
 
-						<a class="portfolio-item__link" href="" id="proximamente">
+						<a class="portfolio-item__link" href="https://abc.neogranadina.org/Detail/collections/14805" id="digitalizacion">
 
 							<div class="portfolio-item__image">
 								<img src="https://neogranadina.org/images/blocks/AHRB_Convento_3x2.jpg" alt="Archivo Histórico Regional de Boyacá">
 							</div>
 							<div class="portfolio-item__content">
 								<div class="portfolio-item__info">
-									<h2 class="portfolio-item__title" style="font-family: 'Lato', sans-serif;">Próximamente</h2>
+									<h2 class="portfolio-item__title" style="font-family: 'Lato', sans-serif;">Archivo Histórico Regional de Boyacá</h2>
 									<p class="portfolio-item__subtitle">Materiales digitalizados por Neogranadina en el Archivo Histórico Regional de Boyacá, Tunja, Colombia.</p>
 									<p class="category-subtitle"></p>
 								</div>
 							</div>
 						</a>
-						<a class="" href="https://abc.neogranadina.org/Detail/collections/7" id="digitalizacion">
+						<a class="" href="https://abc.neogranadina.org/Detail/collections/14805" id="digitalizacion">
 							<div class="portfolio-item__content_perm">
 								<h2 class="portfolio-item__title_perm" >Archivo Histórico Regional de Boyacá</h2>
 							</div>
 						</a>
 
 					</div>
-					<div class="portfolio-item proximamente">
+					<div class="portfolio-item digitalizacion">
 
-						<a class="portfolio-item__link" href="" id="proximamente">
+						<a class="portfolio-item__link" href="https://abc.neogranadina.org/Detail/collections/713" id="digitalizacion">
 
 							<div class="portfolio-item__image">
 								<img src="https://neogranadina.org/images/blocks/ACC_Courtyard@0.5x.jpg" alt="Antiguo Archivo Central del Cauca">
 							</div>
 							<div class="portfolio-item__content">
 								<div class="portfolio-item__info">
-									<h2 class="portfolio-item__title" style="font-family: 'Lato', sans-serif;">Próximamente</h2>
+									<h2 class="portfolio-item__title" style="font-family: 'Lato', sans-serif;">Antiguo Archivo Central del Cauca</h2>
 									<p class="portfolio-item__subtitle">Materiales digitalizados por Neogranadina en el fondo Antiguo Archivo Central del Cauca, del Centro de Investigaciones Históricas José María Arboleda Llorente, Popayán, Colombia.</p>
 									<p class="category-subtitle"></p>
 								</div>
 							</div>
 						</a>
-						<a class="" href="https://abc.neogranadina.org/Detail/collections/7" id="digitalizacion">
+						<a class="" href="https://abc.neogranadina.org/Detail/collections/713" id="digitalizacion">
 							<div class="portfolio-item__content_perm">
 								<h2 class="portfolio-item__title_perm" >Antiguo Archivo Central del Cauca</h2>
 							</div>

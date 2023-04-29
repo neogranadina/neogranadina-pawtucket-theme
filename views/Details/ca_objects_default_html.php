@@ -157,7 +157,7 @@ $vn_id =				$t_object->get('ca_objects.object_id');
 						}
 						print '</div><!-- end detailTools -->';
 					}
-
+					
 					?>
 
 					<div class="row">
