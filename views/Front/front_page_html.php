@@ -119,12 +119,12 @@
 						<a class="portfolio-item__link" href="" id="proximamente">
 
 							<div class="portfolio-item__image">
-								<img src="https://neogranadina.org/images/blocks/ccac-1x1_2.jpg" alt="Herramientas de consulta y catalogación">
+								<img src="https://neogranadina.org/images/blocks/AHR-exterior-dia-2x3.jpg" alt="Archivo Histórico de Rionegro">
 							</div>
 							<div class="portfolio-item__content">
 								<div class="portfolio-item__info">
 									<h2 class="portfolio-item__title" style="font-family: 'Lato', sans-serif;">Próximamente</h2>
-									<p class="portfolio-item__subtitle">Regresa nuestra plataforma de descripción archivística para todos.</p>
+									<p class="portfolio-item__subtitle">Materiales digitalizados por Neogranadina en el Archivo Histórico de Rionegro, Antioquia, Colombia.</p>
 									<p class="category-subtitle"></p>
 								</div>
 							</div>
@@ -166,7 +166,7 @@
 						<a class="portfolio-item__link" href="https://abc.neogranadina.org/Detail/collections/713" id="digitalizacion">
 
 							<div class="portfolio-item__image">
-								<img src="https://neogranadina.org/images/blocks/ACC_Courtyard@0.5x.jpg" alt="Antiguo Archivo Central del Cauca">
+								<img src="https://neogranadina.org/images/blocks/ACC_Courtyard_3x2.jpg" alt="Antiguo Archivo Central del Cauca">
 							</div>
 							<div class="portfolio-item__content">
 								<div class="portfolio-item__info">
