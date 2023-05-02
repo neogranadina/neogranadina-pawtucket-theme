@@ -131,7 +131,7 @@
 						</a>
 						<a class="" href="https://abc.neogranadina.org/Detail/collections/7" id="digitalizacion">
 							<div class="portfolio-item__content_perm">
-								<h2 class="portfolio-item__title_perm" >Catálogo Colectivo de Archivos Colombianos</h2>
+								<h2 class="portfolio-item__title_perm" >Archivo Histórico de Rionegro</h2>
 							</div>
 						</a>
 
@@ -161,6 +161,7 @@
 						</a>
 
 					</div>
+					
 					<div class="portfolio-item digitalizacion">
 
 						<a class="portfolio-item__link" href="https://abc.neogranadina.org/Detail/collections/713" id="digitalizacion">
