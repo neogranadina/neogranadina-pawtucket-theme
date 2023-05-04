@@ -119,7 +119,7 @@
 						<a class="portfolio-item__link" href="" id="proximamente">
 
 							<div class="portfolio-item__image">
-								<img src="https://neogranadina.org/images/blocks/AHR-exterior-dia-2x3.jpg" alt="Archivo Histórico de Rionegro">
+								<img src="https://neogranadina.org/images/blocks/AHR-exterior-sq.jpg" alt="Archivo Histórico de Rionegro">
 							</div>
 							<div class="portfolio-item__content">
 								<div class="portfolio-item__info">
@@ -167,7 +167,7 @@
 						<a class="portfolio-item__link" href="https://abc.neogranadina.org/Detail/collections/713" id="digitalizacion">
 
 							<div class="portfolio-item__image">
-								<img src="https://neogranadina.org/images/blocks/ACC_Courtyard_3x2.jpg" alt="Antiguo Archivo Central del Cauca">
+								<img src="https://neogranadina.org/images/blocks/ACC_Courtyard_3x4.jpg" alt="Antiguo Archivo Central del Cauca">
 							</div>
 							<div class="portfolio-item__content">
 								<div class="portfolio-item__info">
