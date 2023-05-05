@@ -27,10 +27,12 @@
  */
  
 	$t_item = $this->getVar("item");
+	$va_facets 			= $this->getVar('facets');
 	$va_comments = $this->getVar("comments");
 	$vn_comments_enabled = 	$this->getVar("commentsEnabled");
 	$vn_share_enabled = 	$this->getVar("shareEnabled");
 	$vn_pdf_enabled = 		$this->getVar("pdfEnabled");
+	$va_all_facets = $va_browse_type_info["facets"];	
 	
 	# --- get collections configuration
 	$o_collections_config = caGetCollectionsConfig();
