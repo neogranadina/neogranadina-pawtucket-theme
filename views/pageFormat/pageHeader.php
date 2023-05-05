@@ -124,10 +124,10 @@
 				</button>
 			<div class="pretty-container-nav">
 						<div class="pretty-site-logo-nav">
-							<a href="https://abc.neogranadina.org"><img src="https://abc.neogranadina.org/themes/neogranadina/assets/pawtucket/graphics/neogranadina-plain.png" class="pretty-site-logo-nav-img"></a>
+							<a href="https://abcng.org"><img src="https://abcng.org/themes/neogranadina/assets/pawtucket/graphics/neogranadina-plain.png" class="pretty-site-logo-nav-img"></a>
 						</div>
 						<div class="pretty-text-nav">
-							<div class="pretty-title"><a href="https://abc.neogranadina.org" style="color: black; text-decoration: none;">Archivo Biblioteca Catálogo</a></div>
+							<div class="pretty-title"><a href="https://abcng.org" style="color: black; text-decoration: none;">Archivo Biblioteca Catálogo</a></div>
 						</div>
 					</div>
 			</div>
@@ -176,7 +176,7 @@
 					});
 				</script>
 				<ul class="nav navbar-nav navbar-right menuItems" role="list" aria-label="<?php print _t("Primary Navigation"); ?>">
-					<li><a href="https://abc.neogranadina.org">Inicio</a></li>
+					<li><a href="https://abcng.org">Inicio</a></li>
 					<!-- <li <?php print ($this->request->getController() == "About") ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("Acerca de"), "", "", "About", "Index"); ?></li> -->
 					<?php print $this->render("pageFormat/browseMenu.php"); ?>	
 					<li <?php print ($this->request->getController() == "Collections") ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("Instituciones"), "", "", "Collections", "index"); ?></li>					
