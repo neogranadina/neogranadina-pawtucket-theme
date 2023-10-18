@@ -315,6 +315,35 @@ body{
 	max-width:250px;
 }
 /* search / browse results */
+.bResultItemImgPlaceholder{
+	background-color: #FFF;
+    border: 2px solid #EDEDED;
+    color: #858585;
+    margin-bottom: 10px;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    width: 100%;
+}
+.bResultItemImgPlaceholder img{
+	width: 65%;
+	height:auto;
+	opacity:.3;
+}
+.multisearchImgPlaceholder {
+    background-color: #fff;
+    border: 0px solid #EDEDED;
+    padding: 0px 20px 0px 20px;
+    margin-bottom:0px;
+}
+.multisearchImgPlaceholder .bResultItemImgPlaceholder{
+	padding:0px;
+	border:0px;
+	margin:0px;
+}
+.multisearchImgPlaceholder .bResultItemImgPlaceholder img{
+	width:70%;
+}
+
 .bResultItemSetLink {
 	position: absolute;
 	right: 10px;
