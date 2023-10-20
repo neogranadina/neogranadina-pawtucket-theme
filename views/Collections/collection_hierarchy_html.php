@@ -23,7 +23,7 @@
 	}
 	if($vb_has_children){
 ?>					
-			<div class='text-right'><a href='#' onclick='$("#collectionsWrapper").toggle(300);return false;' class='showHide'>Mostrar/ocultar el contenido de la colección</a></div>
+			<div class='text-left'><a href='#' onclick='$("#collectionsWrapper").toggle(300);return false;' class='showHide'>Mostrar/ocultar el contenido de la colección</a></div>
 				<div class="row" id="collectionsWrapper" <?php print ($o_collections_config->get("browser_closed")) ? "style='display:none;'" : ""; ?>>			
 					<div class='col-sm-12'>
 					
