@@ -57,7 +57,7 @@
 
 
 body, .detail, .gallery, label, b, strong{
-	font-family: 'Latolight', sans-serif;
+	font-family: 'LatoLight', sans-serif;
 	font-weight:400;
 	color: #757575;
 	font-size: 16px;
@@ -243,7 +243,7 @@ a:hover{
 }
 
 .nav > li > a, .nav > li > a:hover, .nav > li > a:focus {
-    font-family: lato;
+    font-family: Lato;
     text-transform:uppercase;
 }
 .navbar-default .navbar-nav > li > a{
@@ -270,7 +270,7 @@ a:hover{
 	text-transform:uppercase;
 	letter-spacing:1px;
 	color:#000000;
-	font-family:lato;
+	font-family: Lato;
 }
 .navbar-nav > li > .dropdown-menu a:hover{
 	background-color:#fff;
@@ -417,6 +417,53 @@ body{
 .bResultItem .bResultItemText, .bResultListItemCol .bResultListItemText{
   font-size: 12px;
 }
+
+@media(max-width:768px){
+	.results .bSearchWithinContainer{
+		display:none;
+	}
+}
+.results .bSearchWithinContainer{
+	clear:both;
+	padding:15px 0px 15px 0px;
+	text-align:center;
+}
+.results .btn-search-refine, .results .btn-search-refine:hover{	
+	font-size: 14px;
+	cursor: pointer;
+	background-color: #fff;
+	color:#000;
+	font-size: 14px;
+	line-height:1em;
+	padding: 9px;
+	
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+	background-image: none;
+	outline: 0;
+	border:0px;
+	border-radius: 0px;
+	margin-left: -30px;
+}
+.bSearchWithin, .bSearchWithin:focus {
+    width: 80%;
+    box-shadow: none;
+    border: 0px;
+    border: 0px;
+    border-radius: 0px;
+    height: 35px;
+    font-size: 14px;
+    line-height: 26px;
+    background-color: #FFF;
+	font-size: 14px;
+	display: inline-block;
+	display:inline-block;
+	padding-right: 30px;
+}
+
+
+
 /* front */
 html.frontContainer {
     height: 100%;
@@ -510,7 +557,7 @@ body.frontContainer #footer{
 .heroSearch H1 .line1, .heroSearch H1 .line3 {
     font-size: 28px;
     text-transform: none;
-    font-family: latolight;
+    font-family: LatoLight;
 }
 .heroSearch H1 .line2{
 	font-size: 43px;
@@ -519,7 +566,7 @@ body.frontContainer #footer{
 	color:#FFF;
 	padding-top:20px;
 	padding-bottom:20px;
-	font-family: "Lato";
+	font-family: Lato;
 }
 .heroSearch .formOutline {
 	border: 0px;
@@ -590,7 +637,7 @@ body.frontContainer #footer{
 	font-size: 28px;
 	color: #000;
 	margin-bottom:15px;
-	font-family: "Lato";
+	font-family: Lato;
 	font-weight:600;
 }
 @media(max-width:767px){
@@ -857,7 +904,7 @@ body.frontContainer #footer{
 
 .portfolio-item__title{
     color:#fff;
-    font-family: 'Lato';
+    font-family: Lato;
     font-size:19px;
     font-weight:700;
     letter-spacing:-.02em;
@@ -877,7 +924,7 @@ body.frontContainer #footer{
     }
 }
 .portfolio-item__subtitle{
-    font-family: lato;
+    font-family: Lato;
     margin-top:5px;
     color:rgba(255,255,255,0.85);
     font-size:15px;
@@ -913,7 +960,7 @@ body.frontContainer #footer{
 /*    color:white;*/
     font-size:16px;
     font-weight:normal;
-    font-family:"Lato",sans-serif;
+    font-family: "Lato",sans-serif;
     line-height:1em;
     max-width:95%;
     margin-top: 0.75rem;
