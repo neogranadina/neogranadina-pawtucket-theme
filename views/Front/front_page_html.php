@@ -57,7 +57,7 @@
 						<div class="line3">de <a href="https://neogranadina.org" style="font-family: 'IM Fell DW Pica'; color: white; font-size: 120%; text-decoration: none;">Neogranadina</a></div>
 						<div class="line4">{{{hp_search_text}}}</div>
 					</h1>
-					<form role="search" action="<?php print caNavUrl($this->request, '', 'MultiSearch', 'Index'); ?>">
+					<form role="search" action="<?php print caNavUrl($this->request, '', 'Search', 'object'); ?>">
 						<div class="formOutline">
 							<div class="form-group">
 								<input type="text" class="form-control" id="heroSearchInput" placeholder="<?php print _t("Buscar"); ?>" name="search" autocomplete="off" aria-label="<?php print _t("Buscar"); ?>" />
