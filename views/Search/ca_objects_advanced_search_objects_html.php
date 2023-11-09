@@ -18,26 +18,14 @@ print "<p>Ingrese los términos de búsqueda en este formulario.</p>";
 	</div>		
 	<div class='row'>
 		<div class="advancedSearchField col-sm-12">
-			<span class='formLabel' data-toggle="popover" data-trigger="hover" data-content="Limit your search to Object Titles only.">Título</span>
-			{{{ca_objects.preferred_labels.name%width=220px}}}
-		</div>
-	</div>
-	<div class='row'>
-		<div class="advancedSearchField col-sm-12">
-			<span class='formLabel' data-toggle="popover" data-trigger="hover" data-content="Search records of a particular date or date range.">Rango de fechas <i>(ej. 1750-1790)</i></span>
+			<span class='formLabel' data-toggle="popover" data-trigger="hover" data-content="Search records of a particular date or date range.">Años <i>(ej. 1750-1790)</i></span>
 			{{{ca_objects.unitdate.date_value%width=200px&height=40px&useDatePicker=0}}}
-		</div>
-	</div>
-	<div class='row'>
-		<div class="advancedSearchField col-sm-12">
-			<span class='formLabel' data-toggle="popover" data-trigger="hover" data-content="Search records within a particular collection.">Colección </span>
-			{{{ca_collections.preferred_labels%restrictToTypes=collection%width=200px&height=40px}}}
 		</div>
 	</div>
 	<br style="clear: both;"/>
 	<div class='advancedFormSubmit'>
-		<span class='btn btn-default'>{{{reset%label=Reset}}}</span>
-		<span class='btn btn-default' style="margin-left: 20px;">{{{submit%label=Search}}}</span>
+		<span class='btn btn-default'>{{{reset%label=Borrar}}}</span>
+		<span class='btn btn-default' style="margin-left: 20px;">{{{submit%label=Buscar}}}</span>
 	</div>
 </div>	
 
@@ -45,8 +33,8 @@ print "<p>Ingrese los términos de búsqueda en este formulario.</p>";
 
 	</div>
 	<div class="col-sm-4" >
-		<h1>Helpful Links</h1>
-		<p>Include some helpful info for your users here.</p>
+		<h1>¿Cómo buscar?</h1>
+		<p>Simplemente debes ingresar las palabras claves y el año, o rango de años, para filtrar los resultados.</p>
 	</div><!-- end col -->
 </div><!-- end row -->
 

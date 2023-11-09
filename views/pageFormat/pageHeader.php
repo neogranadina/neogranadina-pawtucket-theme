@@ -158,7 +158,7 @@
 <?php
 	}
 ?>
-				<form class="navbar-form navbar-right" role="search" action="<?php print caNavUrl($this->request, '', 'MultiSearch', 'Index'); ?>" aria-label="<?php print _t("Búsqueda"); ?>">
+				<form class="navbar-form navbar-right" role="search" action="<?php print caNavUrl($this->request, '', 'Search', 'objects'); ?>" aria-label="<?php print _t("Búsqueda"); ?>">
 					<div class="formOutline">
 						<div class="form-group">
 							<input type="text" class="form-control" id="headerSearchInput" placeholder="<?php print _t("Búsqueda sencilla"); ?>" name="search" autocomplete="off" aria-label="<?php print _t("Search text"); ?>" />
