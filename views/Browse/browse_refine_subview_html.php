@@ -40,7 +40,7 @@
 	$vn_facet_display_length_initial = 10;
 	$vn_facet_display_length_maximum = 60;
 
-	$vs_criteria = "";
+	/* $vs_criteria = "";
 	if (sizeof($va_criteria) > 0) {
 		$i = 0;
 		$vb_start_over = false;
@@ -52,7 +52,7 @@
 		if($vb_start_over){
 			$vs_criteria .= caNavLink($this->request, '<button type="button" class="btn btn-default btn-sm">'._t("Start Over").'</button>', 'browseRemoveFacet', '', 'Browse', '*', array('view' => $vs_current_view, 'key' => $vs_browse_key, 'clear' => 1, '_advanced' => $vn_is_advanced ? 1 : 0));
 		}
-	}
+	} */
 	
 	if((is_array($va_facets) && sizeof($va_facets)) || ($vs_criteria) || ($qr_res->numHits() > 1)){
 		print "<div id='bMorePanel'><!-- long lists of facets are loaded here --></div>";
