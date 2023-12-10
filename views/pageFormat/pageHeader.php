@@ -165,7 +165,7 @@
 						</div>
 						<button type="submit" class="btn-search" id="headerSearchButton"><span class="glyphicon glyphicon-search" aria-label="<?php print _t("Submit"); ?>"></span></button>
 					</div>
-					<div class="headerAdvancedSearch"><?php print caNavLink($this->request, _t("Búsqueda avanzada"), "", "", "Search", "advanced/objects"); ?></div>
+					<div class="headerAdvancedSearch"><?php print caNavLink($this->request, _t("Búsqueda avanzada"), "", "", "Search", "advanced/objects"); ?>&nbsp;&nbsp;&nbsp;<a href="https://neogranadina.notion.site/Gu-a-0a9c1a246db04b0fa05b9efc039785a9" target="_blank">Cómo buscar</a></div>
 				</form>
 				<script type="text/javascript">
 					$(document).ready(function(){

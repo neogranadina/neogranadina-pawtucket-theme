@@ -35,8 +35,10 @@ print "<p>Ingrese los términos de búsqueda en este formulario.</p>";
 	<div class="col-sm-4" >
 		<h1>¿Cómo buscar?</h1>
 		<p>Simplemente debes ingresar las palabras claves y el año, o rango de años, para filtrar los resultados.</p>
-		<p>Puedes utilizar un caracter comodín (*) para ampliar los resultados. Por ejemplo:<br>
+		<p>Ten en cuenta que las mayúsculas y los acentos (tildes) no afectan los resultados. Así, buscar "Popayán" y "popayan" te dará los mismos resultados.</p>
+		<p>También puedes utilizar un caracter comodín (*) para ampliar los resultados. Por ejemplo:<br>
 		<b>liber*</b> encontrará coincidencias con "libertador", "libertad", "liberal", etc.
+
 		</p>
 
 	</div><!-- end col -->
