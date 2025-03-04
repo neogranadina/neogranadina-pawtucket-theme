@@ -93,7 +93,7 @@
 						<a class="portfolio-item__link" href="https://abcng.org/Detail/collections/7" id="digitalizacion">
 
 							<div class="portfolio-item__image">
-								<img src="https://abcng.org/themes/neogranadina/assets/pawtucket/graphics/narra_sq_@05x.png" alt="Narra la independencia: fuentes documentales">
+								<?php print caGetThemeGraphic($this->request, 'narra_sq_@05x.png', array('alt' => "Narra la independencia: fuentes documentales", 'class' => "card-img-top")); ?>
 							</div>
 							<div class="portfolio-item__content">
 								<div class="portfolio-item__info">
@@ -114,16 +114,16 @@
 
 					
 
-					<div class="portfolio-item proximamente">
+					<div class="portfolio-item digitalizacion">
 
-						<a class="portfolio-item__link" href="" id="proximamente">
+						<a class="portfolio-item__link" href="https://abcng.org/Detail/collections/14940" id="digitalizacion">
 
 							<div class="portfolio-item__image">
-								<img src="https://test.neogranadina.org/images/blocks/AHR-exterior-sq.jpg" alt="Archivo Histórico de Rionegro">
+								<?php print caGetThemeGraphic($this->request, 'AHR_front.jpg', array('alt' => "Archivo Histórico de Rionegro", 'class' => "card-img-top")); ?>
 							</div>
 							<div class="portfolio-item__content">
 								<div class="portfolio-item__info">
-									<h2 class="portfolio-item__title" style="font-family: 'Lato', sans-serif;">Próximamente</h2>
+									<h2 class="portfolio-item__title" style="font-family: 'Lato', sans-serif;">Archivo Histórico de Rionegro</h2>
 									<p class="portfolio-item__subtitle">Materiales digitalizados por Neogranadina en el Archivo Histórico de Rionegro, Antioquia, Colombia.</p>
 									<p class="category-subtitle"></p>
 								</div>
@@ -144,7 +144,7 @@
 						<a class="portfolio-item__link" href="https://abcng.org/Detail/collections/14805" id="digitalizacion">
 
 							<div class="portfolio-item__image">
-								<img src="https://test.neogranadina.org/images/blocks/AHRB_Convento_3x2.jpg" alt="Archivo Histórico Regional de Boyacá">
+								<?php print caGetThemeGraphic($this->request, 'AHRB_front.jpg', array('alt' => "Archivo Histórico Regional de Boyacá", 'class' => "card-img-top")); ?>
 							</div>
 							<div class="portfolio-item__content">
 								<div class="portfolio-item__info">
@@ -167,7 +167,7 @@
 						<a class="portfolio-item__link" href="https://abcng.org/Detail/collections/713" id="digitalizacion">
 
 							<div class="portfolio-item__image">
-								<img src="https://test.neogranadina.org/images/blocks/ACC_Courtyard_3x4.jpg" alt="Antiguo Archivo Central del Cauca">
+								<?php print caGetThemeGraphic($this->request, 'ACC_front.jpg', array('alt' => "Antiguo Archivo Central del Cauca", 'class' => "card-img-top")); ?>
 							</div>
 							<div class="portfolio-item__content">
 								<div class="portfolio-item__info">
@@ -180,6 +180,29 @@
 						<a class="" href="https://abcng.org/Detail/collections/713" id="digitalizacion">
 							<div class="portfolio-item__content_perm">
 								<h2 class="portfolio-item__title_perm" >Antiguo Archivo Central del Cauca</h2>
+							</div>
+						</a>
+
+					</div>
+
+					<div class="portfolio-item digitalizacion">
+
+						<a class="portfolio-item__link" href="https://abcng.org/Detail/collections/16479" id="digitalizacion">
+
+							<div class="portfolio-item__image">
+								<?php print caGetThemeGraphic($this->request, 'Istmina_front.jpg', array('alt' => "Archivo Histórico del Juzgado del Circuito de Istmina", 'class' => "card-img-top")); ?>
+							</div>
+							<div class="portfolio-item__content">
+								<div class="portfolio-item__info">
+									<h2 class="portfolio-item__title" style="font-family: 'Lato', sans-serif;">Archivo Histórico del Juzgado del Circuito de Istmina</h2>
+									<p class="portfolio-item__subtitle">Esta colección contiene copias digitales de expedientes legales que hacen parte del Archivo del Circuito Judicial de Istmina, en el departamento colombiano de Chocó.</p>
+									<p class="category-subtitle"></p>
+								</div>
+							</div>
+						</a>
+						<a class="" href="https://abcng.org/Detail/collections/16479" id="digitalizacion">
+							<div class="portfolio-item__content_perm">
+								<h2 class="portfolio-item__title_perm" >Archivo Histórico del Juzgado del Circuito de Istmina</h2>
 							</div>
 						</a>
 
