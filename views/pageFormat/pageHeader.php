@@ -179,7 +179,7 @@
 					<li><a href="https://abcng.org">Inicio</a></li>
 					<!-- <li <?php print ($this->request->getController() == "About") ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("Acerca de"), "", "", "About", "Index"); ?></li> -->
 					
-					<li <?php print ($this->request->getController() == "Collections") ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("Instituciones"), "", "", "Collections", "index"); ?></li>					
+					<li <?php print ($this->request->getController() == "Collections") ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("Archivos"), "", "", "Collections", "index"); ?></li>					
 					<!-- <li <?php print ($this->request->getController() == "Gallery") ? 'class="active"' : ''; ?>><?php print caNavLink($this->request, _t("Galerías"), "", "", "Gallery", "Index"); ?></li> -->
 				</ul>
 			</div><!-- /.navbar-collapse -->
